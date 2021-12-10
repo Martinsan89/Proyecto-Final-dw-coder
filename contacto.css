@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #e9b72f;
+}
+
+header {
+  position: relative;
+}
+
+header h1 {
+  background-color: #353131d5;
+  color: #f5ce94;
+  line-height: 215px;
+  display: flex;
+  justify-content: center;
+  clip-path: circle(100px);
+}
+
+.nav-links {
+  position: absolute;
+  bottom: -65px;
+}
+
+nav ul {
+  margin-right: 20px;
+  background-color: #24252a;
+  display: inline-block;
+  padding-bottom: 10px;
+  justify-content: space-between;
+  border: 1px solid white;
+  align-items: flex-end;
+}
+
+nav ul li {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  margin-top: 10px;
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-size: 35px;
+  color: #f5ce94;
+  transition: all 0.3s ease 0s;
+}
+
+nav ul li a:hover {
+  color: #0088a9;
+}
+
+main {
+  position: absolute;
+  top: 300px;
+}
+
+.formulario {
+  max-width: 500px;
+  margin: 2rem 2rem;
+  border: 2px solid #24252a;
+  padding: 2rem;
+}
+
+label {
+  display: block;
+}
+
+input,
+textarea {
+  width: 100%;
+}
+
+#boton {
+  border: 0;
+  background-color: #24252a;
+  padding: 0.5rem;
+  color: #f5ce94;
+  margin: 1rem 0;
+  width: auto;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease 0;
+}
+#boton:hover {
+  color: #0088a9;
+}

@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #e9b72f;
+}
+
+header {
+  position: relative;
+}
+
+.logo {
+  width: 300px;
+  height: 280px;
+  border-radius: 40px;
+  position: absolute;
+  left: 20px;
+  padding: 20px;
+}
+
+header h1 {
+  background-color: #353131d5;
+  color: #f5ce94;
+  line-height: 277px;
+  display: flex;
+  justify-content: center;
+  clip-path: circle(100px);
+  margin-right: 80px;
+}
+
+.foto {
+  width: 400px;
+  height: 300px;
+  position: absolute;
+  right: 30px;
+  top: 10px;
+  border-radius: 40px;
+}
+
+.nav-links {
+  position: absolute;
+  bottom: -92px;
+}
+
+nav ul {
+  margin-right: 20px;
+  background-color: #24252a;
+  display: inline-block;
+  padding-bottom: 10px;
+  justify-content: space-between;
+  border: 1px solid white;
+  align-items: flex-end;
+}
+
+nav ul li {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  margin-top: 10px;
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-size: 35px;
+  color: #f5ce94;
+  transition: all 0.3s ease 0s;
+}
+
+nav ul li a:hover {
+  color: #0088a9;
+}
+
+p {
+  color: black;
+  padding: 20px;
+  padding-top: 80px;
+  line-height: 1, 5;
+  font-size: 1rem;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.contenedor {
+  background-color: #24252a;
+  color: aliceblue;
+  padding: 20px;
+  margin: 20px auto;
+  width: 90%;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: repeat(4 2fr);
+  grid-template-areas:
+    "nombres videos info"
+    "nombres videos info"
+    "nombres videos info"
+    "nombres videos info";
+}
+
+.nombres {
+  grid-area: nombres;
+}
+
+.videos {
+  grid-area: videos;
+}
+
+.info {
+  grid-area: info;
+}
