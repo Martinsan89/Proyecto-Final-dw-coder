@@ -12,30 +12,49 @@ body {
 
 header {
   position: relative;
+  border-bottom: 2px solid black;
+  height: 350px;
+}
+
+.logo {
+  width: 300px;
+  height: 280px;
+  border-radius: 40px;
+  position: absolute;
+  left: 20px;
+  padding: 20px;
 }
 
 header h1 {
   background-color: #353131d5;
   color: #f5ce94;
-  line-height: 215px;
+  line-height: 277px;
   display: flex;
   justify-content: center;
   clip-path: circle(100px);
+  margin-right: 80px;
+}
+
+.foto {
+  width: 400px;
+  height: 300px;
+  position: absolute;
+  right: 30px;
+  top: 10px;
+  border-radius: 40px;
 }
 
 .nav-links {
-  position: absolute;
-  bottom: -65px;
+  margin: 20px;
+  position: relative;
+  bottom: 55px;
 }
 
 nav ul {
-  margin-right: 20px;
   background-color: #24252a;
   display: inline-block;
   padding-bottom: 10px;
-  justify-content: space-between;
   border: 1px solid white;
-  align-items: flex-end;
 }
 
 nav ul li {
@@ -58,8 +77,8 @@ nav ul li a:hover {
 }
 
 main {
-  position: absolute;
-  top: 300px;
+  margin: 20px auto;
+  width: 50%;
 }
 
 .formulario {
@@ -91,4 +110,73 @@ textarea {
 }
 #boton:hover {
   color: #0088a9;
+}
+
+@media all and (max-width: 480px) {
+  header {
+    position: relative;
+  }
+
+  .contacto {
+    position: absolute;
+    top: 100px;
+    left: 40px;
+  }
+
+  header h1 {
+    clip-path: circle(70px);
+    width: 140px;
+  }
+
+  .foto {
+    margin-top: 40px;
+    height: 230px;
+    width: 250px;
+  }
+
+  .logo {
+    margin-top: -5px;
+    position: absolute;
+    left: 176px;
+    height: 248px;
+    width: 200px;
+  }
+
+  .consultas {
+    margin: auto;
+    width: 100%;
+  }
+  h2 {
+    margin-left: 20px;
+  }
+
+  .nav-links {
+    padding-top: 8px;
+    margin-left: 0px;
+  }
+
+  .nav-links ul {
+    height: 55px;
+  }
+  .nav-links ul li a {
+    font-size: 23px;
+  }
+}
+
+@media all and (max-width: 430px) {
+  body {
+    background-color: blueviolet;
+  }
+
+  .foto {
+    display: none;
+  }
+
+  .nav-links ul li {
+    padding: 5px;
+  }
+
+  .nav-links ul li a {
+    font-size: 19px;
+  }
 }

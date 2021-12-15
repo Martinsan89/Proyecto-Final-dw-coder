@@ -18,31 +18,35 @@ header {
   height: 397px;
 }
 
-#audio {
-  padding: 10px 10px;
-  position: absolute;
-  right: 70px;
-  bottom: 25px;
-}
-#audio:hover {
-  transform: scale(1.2, 1.2);
-}
-
+/* Portada (fotos y logo) */
 .container-foto {
   height: 260px;
+  width: auto;
   margin-top: 20px;
   background-color: #090506;
   display: flex;
   justify-content: center;
 }
 
+.portada img {
+  width: 400px;
+}
+
+.logo img {
+  width: 200px;
+}
+
+.perfil img {
+  width: 400px;
+}
+
 .container-foto img {
   height: 100%;
-  width: fit-content;
   animation-name: portada;
   animation-timing-function: ease-in;
   animation-duration: 3s;
 }
+
 @keyframes portada {
   0% {
     opacity: 0;
@@ -55,6 +59,17 @@ header {
   }
 }
 
+/* Audio */
+#audio {
+  padding: 10px 10px;
+  position: absolute;
+  right: 70px;
+  bottom: 25px;
+}
+#audio:hover {
+  transform: scale(1.2, 1.2);
+}
+/* links redes */
 .container {
   background-color: #353131d5;
   height: 100px;
@@ -87,7 +102,7 @@ header {
 .fa-color {
   color: #f5ce94;
 }
-
+/* navbar */
 .nav-links {
   position: absolute;
   bottom: -30px;
@@ -120,7 +135,7 @@ nav ul li a {
 nav ul li a:hover {
   color: #0088a9;
 }
-
+/* Bio y foto */
 .grid {
   margin: 40px 120px;
   height: 550px;
@@ -154,7 +169,7 @@ nav ul li a:hover {
     opacity: 1;
   }
 }
-
+/* bio */
 .info {
   padding: 2em 20px;
   grid-area: info;
@@ -182,7 +197,7 @@ nav ul li a:hover {
   padding: 20px 20px;
   grid-area: body-info;
 }
-
+/* VIdeos y foto */
 .multimedia {
   height: 550px;
   margin: 40px 120px;
@@ -227,18 +242,20 @@ nav ul li a:hover {
 }
 
 .videos iframe {
+  width: 400px;
   margin-top: 10px;
   margin-left: 20px;
 }
 
+/* footer */
 footer {
   background-color: #353131d5;
-  margin-top: 50px;
   border-top: 3px black solid;
   display: flex;
   position: relative;
+  bottom: -145px;
   width: 100%;
-  height: 44px;
+  height: 46px;
 }
 
 footer h3 {
@@ -279,23 +296,133 @@ footer .icons {
   transform: scale(1.2, 1.2);
 }
 
-@media all and (max-width: 900px) {
-  .nav-links li a {
-    font-size: 1.5em;
+@media all and (max-width: 480px) {
+  .container-foto {
+    position: relative;
   }
 
-  .container h1 {
-    font-size: 2em;
+  .portada {
+    display: none;
+  }
+
+  .logo {
+    position: absolute;
+    left: 5px;
+  }
+
+  .perfil {
+    margin-left: 130px;
   }
 
   .container.nombre {
-    margin-bottom: 20px;
-    padding: 0;
+    position: relative;
+  }
+
+  .container ul {
+    position: absolute;
+    bottom: 20px;
+    left: 0px;
+  }
+
+  .container ul li {
+    margin: 7px;
+  }
+
+  #audio {
+    position: absolute;
+    right: 10px;
+    bottom: -7px;
+  }
+
+  .nav-links {
+    position: absolute;
+    left: 30px;
+  }
+
+  .nav-links ul {
+    height: 50px;
+    margin-bottom: 2px;
+  }
+
+  .nav-links ul li {
+    padding: 5px;
+  }
+
+  .nav-links ul li a {
+    font-size: 23px;
+  }
+
+  .grid {
+    margin: 30px;
+  }
+
+  .foto-colon {
+    width: 164px;
+    height: 420px;
+    margin-top: 90px;
+  }
+
+  .body-info {
+    margin: 10px;
+  }
+
+  .body-info p {
+    font-size: 11px;
+  }
+
+  .multimedia {
+    margin: 30px;
+  }
+
+  .nombre h2 {
+    margin-left: 100px;
+  }
+
+  .videos {
+    display: grid;
+    margin-left: -25px;
+  }
+
+  .videos iframe {
+    width: 200px;
+  }
+
+  .foto-toque {
+    width: 226px;
+    height: 368px;
+    margin-bottom: 30px;
+  }
+
+  footer {
+    margin-top: 200px;
+    position: relative;
+  }
+
+  h3 {
+    position: absolute;
+    left: -70px;
+  }
+
+  footer .icons {
+    position: absolute;
+    right: 10px;
   }
 }
 
-@media all and (max-width: 635px) {
-  .nav-links {
+@media all and (max-width: 430px) {
+  body {
+    background-color: blueviolet;
+  }
+
+  .multimedia {
+    margin-left: 120px;
+  }
+
+  .nombre h2 {
+    margin-left: 60px;
+  }
+
+  .foto-toque {
     display: none;
   }
 }
