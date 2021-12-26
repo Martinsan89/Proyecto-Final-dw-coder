@@ -1,0 +1,31 @@
+.nav-links {
+  margin: 20px;
+  position: relative;
+  bottom: 55px;
+
+  ul {
+    background-color: #24252a;
+    display: inline-block;
+    padding-bottom: 10px;
+    border: 1px solid white;
+  }
+
+  li {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    margin-top: 10px;
+    display: inline-block;
+    padding: 0px 20px;
+  }
+
+  a {
+    text-decoration: none;
+    font-size: 35px;
+    color: $primary_color;
+    transition: all 0.3s ease 0s;
+
+    &:hover {
+      color: #0088a9;
+    }
+  }
+}
