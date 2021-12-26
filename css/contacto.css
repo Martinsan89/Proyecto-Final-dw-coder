@@ -81,35 +81,12 @@ main {
   width: 50%;
 }
 
-.formulario {
-  max-width: 500px;
-  margin: 2rem 2rem;
-  border: 2px solid #24252a;
-  padding: 2rem;
-}
-
-label {
-  display: block;
-}
-
-input,
-textarea {
-  width: 100%;
-}
-
-#boton {
-  border: 0;
+.style {
   background-color: #24252a;
   padding: 0.5rem;
   color: #f5ce94;
   margin: 1rem 0;
-  width: auto;
   text-transform: uppercase;
-  cursor: pointer;
-  transition: all 0.3s ease 0;
-}
-#boton:hover {
-  color: #0088a9;
 }
 
 @media all and (max-width: 480px) {
@@ -152,11 +129,12 @@ textarea {
 
   .nav-links {
     padding-top: 8px;
-    margin-left: 0px;
+    margin-left: 10px;
   }
 
   .nav-links ul {
     height: 55px;
+    padding-right: 15px;
   }
   .nav-links ul li a {
     font-size: 23px;
@@ -164,10 +142,6 @@ textarea {
 }
 
 @media all and (max-width: 430px) {
-  body {
-    background-color: blueviolet;
-  }
-
   .foto {
     display: none;
   }

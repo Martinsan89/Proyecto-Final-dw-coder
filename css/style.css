@@ -16,6 +16,7 @@ header {
   position: relative;
   border-bottom: 2px solid black;
   height: 397px;
+  width: 100%;
 }
 
 /* Portada (fotos y logo) */
@@ -28,20 +29,17 @@ header {
   justify-content: center;
 }
 
-.portada img {
-  width: 400px;
-}
-
 .logo img {
   width: 200px;
 }
 
 .perfil img {
-  width: 400px;
+  width: 200px;
 }
 
 .container-foto img {
   height: 100%;
+  width: auto;
   animation-name: portada;
   animation-timing-function: ease-in;
   animation-duration: 3s;
@@ -70,13 +68,13 @@ header {
   transform: scale(1.2, 1.2);
 }
 /* links redes */
-.container {
+.container-nombre {
   background-color: #353131d5;
   height: 100px;
   position: relative;
 }
 
-.container ul {
+.container-nombre ul {
   padding: 20px;
   color: #f4f4f4;
   display: inline-block;
@@ -84,18 +82,18 @@ header {
   left: 180px;
 }
 
-.container ul li {
+.container-nombre ul li {
   padding-right: 10px;
   display: inline-block;
   justify-content: center;
 }
 
-.container ul a i {
+.container-nombre ul a i {
   transition: all 0.3s ease 0s;
 }
 
-.container ul a i:hover {
-  color: #0088a9;
+.container-nombre ul a i:hover {
+  color: #118048;
   transform: scale(1.2, 1.2);
 }
 
@@ -105,8 +103,8 @@ header {
 /* navbar */
 .nav-links {
   position: absolute;
-  bottom: -30px;
-  left: 460px;
+  bottom: -54px;
+  left: 60px;
 }
 
 nav ul {
@@ -133,43 +131,34 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  color: #0088a9;
+  color: #118048;
 }
-/* Bio y foto */
-.grid {
-  margin: 40px 120px;
-  height: 550px;
+/* carousel*/
+.container {
   border-bottom: 2px solid black;
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  grid-template-rows: 1fr 2fr 1fr;
-  grid-template-areas:
-    "foto-colon info"
-    "foto-colon body-info"
-    "foto-colon body-info";
 }
 
-.foto-colon {
-  grid-area: foto-colon;
-  height: 95%;
-  width: 360px;
-  border-radius: 40px;
-  animation-name: foto-colon;
-  animation-timing-function: ease-in;
-  animation-duration: 2s;
+img {
+  height: 600px;
 }
-@keyframes foto-colon {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 0.5;
-  }
-  100% {
-    opacity: 1;
-  }
+
+.br {
+  border-radius: 80px;
 }
-/* bio */
+
+h2 {
+  background-color: #353131d5;
+  color: #e9b72f;
+  margin-top: 10px;
+  font-size: 30px;
+  line-height: 70px;
+  display: flex;
+  justify-content: center;
+  clip-path: circle(at 50% 50%);
+  font-family: "Monserrat", serif;
+}
+
+/* bio texto 
 .info {
   padding: 2em 20px;
   grid-area: info;
@@ -196,22 +185,11 @@ nav ul li a:hover {
   margin-left: 100px;
   padding: 20px 20px;
   grid-area: body-info;
-}
+}*/
 /* VIdeos y foto */
 .multimedia {
-  height: 550px;
-  margin: 40px 120px;
-  position: relative;
-  display: grid;
-  align-items: center;
-  grid-template-columns: none;
-  grid-template-areas:
-    "nombre foto-toque"
-    "videos foto-toque";
-}
-
-.nombre {
-  grid-area: nombre;
+  width: 80%;
+  margin: auto;
 }
 
 .nombre h2 {
@@ -220,7 +198,7 @@ nav ul li a:hover {
   line-height: 74px;
   left: 60px;
   clip-path: circle(at 50% 50%);
-  width: 70px;
+  width: 90px;
   margin-left: 380px;
 }
 
@@ -230,15 +208,9 @@ nav ul li a:hover {
   padding-left: 4px;
 }
 
-.foto-toque {
-  grid-area: foto-toque;
-  width: 360px;
-  height: 95%;
-  border-radius: 40px;
-}
-
 .videos {
   grid-area: videos;
+  margin-top: 25px;
 }
 
 .videos iframe {
@@ -252,9 +224,6 @@ footer {
   background-color: #353131d5;
   border-top: 3px black solid;
   display: flex;
-  position: relative;
-  bottom: -145px;
-  width: 100%;
   height: 46px;
 }
 
@@ -275,7 +244,7 @@ footer a {
 }
 
 footer a:hover {
-  color: #0088a9;
+  color: #118048;
 }
 
 footer .icons {
@@ -292,8 +261,104 @@ footer .icons {
 }
 
 .icons a i:hover {
-  color: #0088a9;
+  color: #118048;
   transform: scale(1.2, 1.2);
+}
+
+@media all and (max-width: 1024px) {
+  .nav-links {
+    left: 15px;
+  }
+
+  .body-info p {
+    font-size: 13px;
+  }
+
+  .foto-toque {
+    height: 600px;
+    margin-top: 20px;
+  }
+
+  .videos iframe {
+    width: 300px;
+  }
+}
+
+@media all and (max-width: 865px) {
+  .portada {
+    display: none;
+  }
+
+  .nav-links ul li a {
+    font-size: 30px;
+  }
+
+  .grid {
+    margin: 30px;
+  }
+
+  .foto-colon {
+    width: 250px;
+    height: 400px;
+    margin-top: 20px;
+  }
+
+  .body-info p {
+    font-size: 12px;
+  }
+
+  .foto-toque {
+    display: none;
+  }
+
+  .nombre h2 {
+    margin-left: 270px;
+  }
+
+  .videos iframe {
+    width: 270px;
+  }
+}
+
+@media all and (max-width: 720px) {
+  .container-nombre {
+    position: relative;
+  }
+
+  .container-nombre ul {
+    position: absolute;
+    bottom: 20px;
+    left: 0px;
+  }
+
+  .container-nombre ul li {
+    margin: 7px;
+  }
+
+  #audio {
+    position: absolute;
+    right: 10px;
+    bottom: -7px;
+  }
+
+  .foto-colon {
+    width: 200px;
+    height: 300px;
+    margin-top: 20px;
+  }
+
+  .nav-links ul li a {
+    font-size: 25px;
+  }
+
+  .body-info p {
+    font-size: 11px;
+  }
+
+  .nombre {
+    position: absolute;
+    right: 145px;
+  }
 }
 
 @media all and (max-width: 480px) {
@@ -314,17 +379,17 @@ footer .icons {
     margin-left: 130px;
   }
 
-  .container.nombre {
+  .container-nombre {
     position: relative;
   }
 
-  .container ul {
+  .container-nombre ul {
     position: absolute;
     bottom: 20px;
     left: 0px;
   }
 
-  .container ul li {
+  .container-nombre ul li {
     margin: 7px;
   }
 
@@ -387,14 +452,7 @@ footer .icons {
     width: 200px;
   }
 
-  .foto-toque {
-    width: 226px;
-    height: 368px;
-    margin-bottom: 30px;
-  }
-
   footer {
-    margin-top: 200px;
     position: relative;
   }
 
@@ -410,19 +468,47 @@ footer .icons {
 }
 
 @media all and (max-width: 430px) {
-  body {
-    background-color: blueviolet;
+  .container-nombre ul li {
+    font-size: 12px;
+    margin-bottom: 0px;
+  }
+
+  .nav-links {
+    bottom: -30px;
+  }
+
+  .nav-links ul {
+    padding-right: 15px;
+  }
+
+  .nav-links ul li {
+    margin: auto;
+  }
+
+  .mf {
+    width: 300px;
+  }
+
+  .mt {
+    width: 90%;
   }
 
   .multimedia {
-    margin-left: 120px;
+    margin-left: auto;
   }
 
+  .nombre {
+    margin: auto;
+  }
   .nombre h2 {
-    margin-left: 60px;
+    margin-right: 45px;
   }
 
-  .foto-toque {
-    display: none;
+  .videos {
+    margin: auto;
+    padding-top: 90px;
+  }
+  .videos iframe {
+    width: fit-content;
   }
 }
