@@ -158,38 +158,10 @@ h2 {
   font-family: "Monserrat", serif;
 }
 
-/* bio texto 
-.info {
-  padding: 2em 20px;
-  grid-area: info;
-  justify-content: center;
-}
-
-.info h2 {
-  background-color: #353131d5;
-  color: #e9b72f;
-  margin-top: 10px;
-  font-size: 30px;
-  line-height: 70px;
-  display: flex;
-  justify-content: center;
-  clip-path: circle(at 50% 50%);
-}
-
-.body-info {
-  color: black;
-  line-height: 2, 5;
-  font-size: 1rem;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  margin-left: 100px;
-  padding: 20px 20px;
-  grid-area: body-info;
-}*/
 /* VIdeos y foto */
 .multimedia {
   width: 80%;
-  margin: auto;
+  margin: 0px 250px;
 }
 
 .nombre h2 {
@@ -215,6 +187,7 @@ h2 {
 
 .videos iframe {
   width: 400px;
+  height: 250px;
   margin-top: 10px;
   margin-left: 20px;
 }
@@ -264,7 +237,7 @@ footer .icons {
   color: #118048;
   transform: scale(1.2, 1.2);
 }
-
+/* mediaqueries */
 @media all and (max-width: 1024px) {
   .nav-links {
     left: 15px;
