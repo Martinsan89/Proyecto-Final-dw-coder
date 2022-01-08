@@ -1,0 +1,257 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap");
+
+// Mapa colores //
+$colores: (
+  primario: #e9b72f,
+  portada: #090506,
+  redes: #353131d5,
+  hover: #118048,
+  icons: #f5ce94,
+  nav: #24252a,
+);
+
+// Extend //
+.extend-h2 {
+  background-color: map-get($colores, redes);
+  color: map-get($colores, primario);
+  line-height: 74px;
+  clip-path: circle(at 50% 50%);
+}
+
+// mixin //
+@mixin sizes($width, $height) {
+  width: $width;
+  height: $height;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-color: map-get($colores, primario);
+  margin: -20px;
+}
+
+header {
+  position: relative;
+  border-bottom: 2px solid black;
+  @include sizes(100%, 397px);
+}
+
+/* Portada (fotos y logo) */
+.container-foto {
+  @include sizes(auto, 260px);
+  margin-top: 20px;
+  background-color: #090506;
+  display: flex;
+  justify-content: center;
+}
+
+.logo img {
+  width: 200px;
+}
+
+.perfil img {
+  width: 200px;
+}
+
+.container-foto img {
+  @include sizes(auto, 100%);
+  animation-name: portada;
+  animation-timing-function: ease-in;
+  animation-duration: 3s;
+}
+
+@keyframes portada {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Audio */
+#audio {
+  padding: 10px 10px;
+  position: absolute;
+  right: 70px;
+  bottom: 25px;
+}
+#audio:hover {
+  transform: scale(1.2, 1.2);
+}
+
+/* links redes */
+.container-redes {
+  background-color: map-get($colores, redes);
+  height: 100px;
+  position: relative;
+}
+
+.container-redes ul {
+  padding: 20px;
+  display: inline-block;
+  position: absolute;
+  left: 180px;
+}
+
+.container-redes ul li {
+  padding-right: 10px;
+  display: inline-block;
+  justify-content: center;
+}
+
+.container-redes ul a i {
+  transition: all 0.3s ease 0s;
+}
+
+.container-redes ul a i:hover {
+  color: map-get($colores, hover);
+  transform: scale(1.2, 1.2);
+}
+
+.fa-color {
+  color: map-get($colores, icons);
+}
+
+/* navbar */
+.nav-links {
+  position: absolute;
+  bottom: -54px;
+  left: 60px;
+}
+
+nav ul {
+  background-color: map-get($colores, nav);
+  padding-bottom: 10px;
+}
+nav ul:hover {
+  transform: scale(1.2, 1.2);
+}
+
+nav ul li {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  margin-top: 10px;
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-size: 35px;
+  color: map-get($colores, icons);
+  transition: all 0.3s ease 0s;
+}
+
+nav ul li a:hover {
+  color: map-get($colores, hover);
+}
+
+/* carousel*/
+.container {
+  border-bottom: 2px solid black;
+}
+
+img {
+  height: 600px;
+}
+
+.br {
+  border-radius: 80px;
+}
+
+h2 {
+  @extend .extend-h2;
+  margin-top: 10px;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  font-family: "Monserrat", serif;
+}
+
+/* VIdeos y foto */
+.multimedia {
+  width: 80%;
+  margin: 0px 250px;
+}
+
+.nombre h2 {
+  @extend .extend-h2;
+  left: 60px;
+  width: 90px;
+  margin-left: 380px;
+}
+
+.nombre em {
+  font-family: "Monserrat", serif;
+  font-size: 22px;
+  padding-left: 4px;
+}
+
+.videos {
+  grid-area: videos;
+  margin-top: 25px;
+}
+
+.videos iframe {
+  @include sizes(400px, 250px);
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+/* footer */
+footer {
+  background-color: map-get($colores, redes);
+  border-top: 3px black solid;
+  display: flex;
+  height: 46px;
+}
+
+footer h3 {
+  font-size: 28px;
+  margin-left: 120px;
+}
+footer h3:hover {
+  transform: scale(1.2, 1.2);
+}
+
+footer a {
+  text-decoration: none;
+  font-size: 20px;
+  color: map-get($colores, icons);
+  transition: all 0.3s ease 0s;
+  padding-right: 20px;
+}
+
+footer a:hover {
+  color: map-get($colores, hover);
+}
+
+footer .icons {
+  position: absolute;
+  right: 120px;
+}
+
+.icons .fa-color {
+  color: map-get($colores, icons);
+}
+
+.icons a i {
+  transition: all 0.3s ease 0s;
+}
+
+.icons a i:hover {
+  color: map-get($colores, hover);
+  transform: scale(1.2, 1.2);
+}
+
+@import "mediaStyle";

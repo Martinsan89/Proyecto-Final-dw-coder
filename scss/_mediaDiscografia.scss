@@ -1,0 +1,88 @@
+/* mediaqueries Discografia */
+@media all and (max-width: 480px) {
+  header {
+    position: relative;
+  }
+
+  .logo {
+    margin-top: -5px;
+    position: absolute;
+    left: 176px;
+    height: 248px;
+    width: 200px;
+  }
+
+  .foto {
+    height: 230px;
+    width: 255px;
+    margin-top: 30px;
+  }
+
+  header h1 {
+    clip-path: circle(80px);
+    width: 160px;
+    margin-left: -20px;
+  }
+
+  .discografia {
+    position: absolute;
+    top: 100px;
+    left: 40px;
+  }
+
+  .nav-links ul {
+    height: 55px;
+
+    li a {
+      font-size: 22px;
+    }
+  }
+
+  .jel {
+    margin-top: 30px;
+    display: table-caption;
+    width: 400px;
+  }
+
+  .dinah {
+    margin-top: 30px;
+    display: table-caption;
+    width: 400px;
+  }
+
+  .dsm {
+    margin-top: 30px;
+    display: table-caption;
+    width: 400px;
+  }
+}
+
+@media all and (max-width: 430px) {
+  body {
+    background-color: blueviolet;
+  }
+
+  .foto {
+    display: none;
+  }
+
+  .nav-links ul li {
+    padding: 5px;
+
+    li a {
+      font-size: 19px;
+    }
+  }
+
+  .jel {
+    margin-left: 5px;
+  }
+
+  .dinah {
+    margin-left: 5px;
+  }
+
+  .dsm {
+    margin-left: 5px;
+  }
+}

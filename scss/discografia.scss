@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap");
+
+$bgbody: #e9b72f;
+
+@mixin discos {
+  background-color: #24252a;
+  margin: 40px;
+  width: 90%;
+  border-radius: 40px;
+  display: flex;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $bgbody;
+}
+
+/* Portada */
+
+header {
+  height: 350px;
+  position: relative;
+  border-bottom: 2px solid black;
+
+  h1 {
+    background-color: #353131d5;
+    color: $bgbody;
+    line-height: 277px;
+    display: flex;
+    justify-content: center;
+    clip-path: circle(110px);
+    margin-right: 80px;
+  }
+}
+
+.logo {
+  width: 300px;
+  height: 280px;
+  border-radius: 40px;
+  position: absolute;
+  left: 20px;
+  padding: 20px;
+}
+
+.foto {
+  width: 400px;
+  height: 300px;
+  position: absolute;
+  right: 30px;
+  top: 10px;
+  border-radius: 40px;
+}
+
+/* navmenu */
+
+@import "navmenu";
+
+// Discos
+
+h3 {
+  color: white;
+  padding: 20px;
+  line-height: 1.5;
+  font-size: 30px;
+  font-style: oblique;
+}
+
+p {
+  color: white;
+  align-items: center;
+  line-height: 1.5;
+  font-size: 20px;
+  padding: 20px;
+}
+
+iframe {
+  flex-grow: 2;
+  height: 200px;
+}
+
+.ms {
+  @include discos;
+}
+
+.jel {
+  @include discos;
+}
+
+.dinah {
+  @include discos;
+  iframe {
+    height: 300px;
+  }
+}
+
+.dsm {
+  @include discos;
+}
+
+@import "mediaDiscografia";

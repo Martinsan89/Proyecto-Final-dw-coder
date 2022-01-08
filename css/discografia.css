@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap");
-
 * {
   margin: 0;
   padding: 0;
@@ -16,16 +15,6 @@ header {
   position: relative;
   border-bottom: 2px solid black;
 }
-
-.logo {
-  width: 300px;
-  height: 280px;
-  border-radius: 40px;
-  position: absolute;
-  left: 20px;
-  padding: 20px;
-}
-
 header h1 {
   background-color: #353131d5;
   color: #e9b72f;
@@ -34,6 +23,15 @@ header h1 {
   justify-content: center;
   clip-path: circle(110px);
   margin-right: 80px;
+}
+
+.logo {
+  width: 300px;
+  height: 280px;
+  border-radius: 40px;
+  position: absolute;
+  left: 20px;
+  padding: 20px;
 }
 
 .foto {
@@ -74,57 +72,6 @@ header h1 {
   color: #0088a9;
 }
 
-/* .nav-links {
-  margin: 20px;
-  position: absolute;
-  bottom: -55px;
-}
-
-nav ul {
-  margin-right: 20px;
-  background-color: #24252a;
-  display: inline-block;
-  padding-bottom: 10px;
-  justify-content: space-between;
-  border: 1px solid white;
-  align-items: flex-end;
-}
-
-nav ul li {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 500;
-  margin-top: 10px;
-  display: inline-block;
-  padding: 0px 20px;
-}
-
-nav ul li a {
-  text-decoration: none;
-  font-size: 35px;
-  color: #f5ce94;
-  transition: all 0.3s ease 0s;
-}
-
-nav ul li a:hover {
-  color: #0088a9;
-} */
-
-/* Discos */
-.ms {
-  background-color: #24252a;
-  margin: 40px;
-  width: 90%;
-  border-radius: 40px;
-  display: flex;
-}
-.jel {
-  background-color: #24252a;
-  margin: 40px;
-  width: 90%;
-  border-radius: 40px;
-  display: flex;
-}
-
 h3 {
   color: white;
   padding: 20px;
@@ -146,7 +93,7 @@ iframe {
   height: 200px;
 }
 
-.dinah {
+.ms {
   background-color: #24252a;
   margin: 40px;
   width: 90%;
@@ -154,7 +101,22 @@ iframe {
   display: flex;
 }
 
-iframe {
+.jel {
+  background-color: #24252a;
+  margin: 40px;
+  width: 90%;
+  border-radius: 40px;
+  display: flex;
+}
+
+.dinah {
+  background-color: #24252a;
+  margin: 40px;
+  width: 90%;
+  border-radius: 40px;
+  display: flex;
+}
+.dinah iframe {
   height: 300px;
 }
 
@@ -171,7 +133,6 @@ iframe {
   header {
     position: relative;
   }
-
   .logo {
     margin-top: -5px;
     position: absolute;
@@ -179,44 +140,37 @@ iframe {
     height: 248px;
     width: 200px;
   }
-
   .foto {
     height: 230px;
     width: 255px;
     margin-top: 30px;
   }
-
   header h1 {
     clip-path: circle(80px);
     width: 160px;
     margin-left: -20px;
   }
-
   .discografia {
     position: absolute;
     top: 100px;
     left: 40px;
   }
-
   .nav-links ul {
     height: 55px;
   }
   .nav-links ul li a {
     font-size: 22px;
   }
-
   .jel {
     margin-top: 30px;
     display: table-caption;
     width: 400px;
   }
-
   .dinah {
     margin-top: 30px;
     display: table-caption;
     width: 400px;
   }
-
   .dsm {
     margin-top: 30px;
     display: table-caption;
@@ -228,27 +182,21 @@ iframe {
   body {
     background-color: blueviolet;
   }
-
   .foto {
     display: none;
   }
-
   .nav-links ul li {
     padding: 5px;
   }
-
-  .nav-links ul li a {
+  .nav-links ul li li a {
     font-size: 19px;
   }
-
   .jel {
     margin-left: 5px;
   }
-
   .dinah {
     margin-left: 5px;
   }
-
   .dsm {
     margin-left: 5px;
   }
