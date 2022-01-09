@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Luxurious+Roman&display=swap");
 
 // Mapa colores //
 $colores: (
@@ -78,29 +79,37 @@ header {
   }
 }
 
+/* links redes */
+.container-redes {
+  background-color: map-get($colores, redes);
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
 /* Audio */
 #audio {
   padding: 10px 10px;
-  position: absolute;
-  right: 70px;
-  bottom: 25px;
+  margin-top: 20px;
 }
 #audio:hover {
   transform: scale(1.2, 1.2);
 }
 
-/* links redes */
-.container-redes {
-  background-color: map-get($colores, redes);
-  height: 100px;
-  position: relative;
+// Encabezado
+
+h1 {
+  font-family: "Nothing you could do";
+  font-size: 3rem;
+  color: map-get($colores, icons);
+  margin-top: 20px;
 }
 
+// Redes
 .container-redes ul {
   padding: 20px;
   display: inline-block;
-  position: absolute;
-  left: 180px;
 }
 
 .container-redes ul li {
@@ -169,13 +178,19 @@ img {
   border-radius: 80px;
 }
 
+// Bio
 h2 {
   @extend .extend-h2;
   margin-top: 10px;
   font-size: 30px;
   display: flex;
   justify-content: center;
-  font-family: "Monserrat", serif;
+  font-family: "Nothing you could do", serif;
+}
+
+p {
+  font-family: "Luxurious Roman";
+  font-size: 20px;
 }
 
 /* VIdeos y foto */
@@ -192,7 +207,7 @@ h2 {
 }
 
 .nombre em {
-  font-family: "Monserrat", serif;
+  font-family: "Nothing you could do";
   font-size: 22px;
   padding-left: 4px;
 }
@@ -217,6 +232,7 @@ footer {
 }
 
 footer h3 {
+  font-family: "Montserrat";
   font-size: 28px;
   margin-left: 120px;
 }
