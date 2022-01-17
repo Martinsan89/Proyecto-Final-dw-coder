@@ -5,7 +5,8 @@
   background-color: #353131d5;
   color: #e9b72f;
   line-height: 74px;
-  clip-path: circle(at 50% 50%); }
+  clip-path: circle(at 50% 50%);
+  margin: auto; }
 
 * {
   box-sizing: border-box;
@@ -29,7 +30,7 @@ header {
   margin-top: 20px;
   background-color: #090506;
   display: flex;
-  justify-content: center; }
+  justify-content: space-between; }
 
 .logo img {
   width: 200px; }
@@ -58,19 +59,20 @@ header {
   height: 100px;
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly; }
+  justify-content: space-between; }
 
 /* Audio */
 #audio {
   padding: 10px 10px;
-  margin-top: 20px; }
+  margin-top: 20px;
+  margin-left: 20px; }
 
 #audio:hover {
   transform: scale(1.2, 1.2); }
 
 h1 {
   font-family: "Nothing you could do";
-  font-size: 3rem;
+  font-size: 2.8rem;
   color: #f5ce94;
   margin-top: 20px; }
 
@@ -123,7 +125,7 @@ nav ul li a:hover {
   color: #118048; }
 
 /* carousel*/
-.container {
+.Biografia {
   border-bottom: 2px solid black; }
 
 img {
@@ -143,30 +145,27 @@ p {
   font-family: "Luxurious Roman";
   font-size: 20px; }
 
-/* VIdeos y foto */
+.borderbottom {
+  border-bottom: 2px solid black; }
+
+/* VIdeos */
 .multimedia {
   width: 80%;
   margin: 0px 250px; }
 
-.nombre h2 {
-  left: 60px;
-  width: 90px;
-  margin-left: 380px; }
+.nombre {
+  margin-top: 10px; }
 
 .nombre em {
   font-family: "Nothing you could do";
   font-size: 22px;
   padding-left: 4px; }
 
-.videos {
-  grid-area: videos;
-  margin-top: 25px; }
-
 .videos iframe {
   width: 400px;
   height: 250px;
-  margin-top: 10px;
-  margin-left: 20px; }
+  margin-left: 20px;
+  margin-top: 20px; }
 
 /* footer */
 footer {
@@ -208,7 +207,18 @@ footer .icons {
   transform: scale(1.2, 1.2); }
 
 /* mediaqueries Style */
+@media all and (max-width: 1199px) {
+  h1 {
+    font-size: 2.5rem; } }
+
+@media all and (max-width: 1096px) {
+  h1 {
+    font-size: 2.2rem; } }
+
 @media all and (max-width: 1024px) {
+  h1 {
+    font-size: 1.8rem;
+    margin-top: 35px; }
   .nav-links {
     left: 15px; }
   .body-info p {
@@ -219,50 +229,68 @@ footer .icons {
   .videos iframe {
     width: 300px; } }
 
-@media all and (max-width: 865px) {
+@media all and (max-width: 991px) {
+  .mf {
+    width: 90%; }
+  .foto-colon {
+    width: 164px;
+    height: 420px;
+    margin-top: 90px; }
+  .body-info {
+    margin: 10px; }
+  .mt {
+    width: 90%; }
+  .body-info p {
+    font-size: 11px; }
+  .multimedia {
+    margin: 30px; }
+  .videos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; }
+  .videos iframe {
+    width: fit-content;
+    height: 200px; }
+  footer {
+    position: relative; }
+  h3 {
+    position: absolute;
+    left: -70px; }
+  footer .icons {
+    position: absolute;
+    right: 10px; } }
+
+@media all and (max-width: 929px) {
+  h1 {
+    font-size: 1.5rem; } }
+
+@media all and (max-width: 814px) {
+  .container-foto {
+    position: relative; }
   .portada {
     display: none; }
-  .nav-links ul li a {
-    font-size: 30px; }
-  .grid {
-    margin: 30px; }
-  .foto-colon {
-    width: 250px;
-    height: 400px;
-    margin-top: 20px; }
-  .body-info p {
-    font-size: 12px; }
-  .foto-toque {
-    display: none; }
-  .nombre h2 {
-    margin-left: 270px; }
-  .videos iframe {
-    width: 270px; } }
-
-@media all and (max-width: 720px) {
-  .container-nombre {
-    position: relative; }
-  .container-nombre ul {
+  .logo {
     position: absolute;
-    bottom: 20px;
-    left: 0px; }
-  .container-nombre ul li {
+    left: 5px; }
+  .perfil {
+    margin-left: 130px; }
+  h1 {
+    margin-top: 15px;
+    font-size: 1.2rem; }
+  .container-redes ul {
+    position: absolute;
+    bottom: -7px;
+    left: 0px;
+    font-size: 13px;
+    display: flex; }
+  .container-redes ul li {
     margin: 7px; }
   #audio {
     position: absolute;
     right: 10px;
-    bottom: -7px; }
-  .foto-colon {
-    width: 200px;
-    height: 300px;
-    margin-top: 20px; }
+    bottom: 25px; }
   .nav-links ul li a {
-    font-size: 25px; }
-  .body-info p {
-    font-size: 11px; }
-  .nombre {
-    position: absolute;
-    right: 145px; } }
+    font-size: 25px; } }
 
 @media all and (max-width: 480px) {
   .container-foto {
@@ -274,64 +302,46 @@ footer .icons {
     left: 5px; }
   .perfil {
     margin-left: 130px; }
-  .container-nombre {
-    position: relative; }
-  .container-nombre ul {
+  h1 {
+    margin-top: 15px;
+    font-size: 1.5rem; }
+  .container-redes ul {
     position: absolute;
-    bottom: 20px;
-    left: 0px; }
-  .container-nombre ul li {
+    bottom: 0px;
+    left: 0px;
+    font-size: 13px;
+    display: flex; }
+  .container-redes ul li {
     margin: 7px; }
   #audio {
     position: absolute;
     right: 10px;
-    bottom: -7px; }
+    bottom: 35px;
+    width: 250px; }
   .nav-links {
     position: absolute;
     left: 30px; }
   .nav-links ul {
     height: 50px;
-    margin-bottom: 2px; }
+    margin-bottom: 25px; }
   .nav-links ul li {
-    padding: 5px; }
+    padding: -1px; }
   .nav-links ul li a {
-    font-size: 23px; }
-  .grid {
-    margin: 30px; }
-  .foto-colon {
-    width: 164px;
-    height: 420px;
-    margin-top: 90px; }
-  .body-info {
-    margin: 10px; }
-  .body-info p {
-    font-size: 11px; }
-  .multimedia {
-    margin: 30px; }
-  .nombre h2 {
-    margin-left: 100px; }
-  .videos {
-    display: grid;
-    margin-left: -25px; }
-  .videos iframe {
-    width: 200px; }
-  footer {
-    position: relative; }
-  h3 {
-    position: absolute;
-    left: -70px; }
-  footer .icons {
-    position: absolute;
-    right: 10px; } }
+    font-size: 19px; } }
 
 @media all and (max-width: 430px) {
-  .container-nombre ul li {
+  #audio {
+    width: 250px; }
+  h1 {
+    font-size: 1.5rem; }
+  .container-redes ul li {
     font-size: 12px;
     margin-bottom: 0px; }
   .nav-links {
     bottom: -30px; }
   .nav-links ul {
-    padding-right: 15px; }
+    padding: 5px;
+    margin-bottom: 7px; }
   .nav-links ul li {
     margin: auto; }
   .mf {
@@ -340,10 +350,6 @@ footer .icons {
     width: 90%; }
   .multimedia {
     margin-left: auto; }
-  .nombre {
-    margin: auto; }
-  .nombre h2 {
-    margin-right: 45px; }
   .videos {
     margin: auto;
     padding-top: 90px; }

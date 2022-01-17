@@ -18,6 +18,7 @@ $colores: (
   color: map-get($colores, primario);
   line-height: 74px;
   clip-path: circle(at 50% 50%);
+  margin: auto;
 }
 
 // mixin //
@@ -49,7 +50,7 @@ header {
   margin-top: 20px;
   background-color: #090506;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 .logo img {
@@ -85,13 +86,14 @@ header {
   height: 100px;
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 
 /* Audio */
 #audio {
   padding: 10px 10px;
   margin-top: 20px;
+  margin-left: 20px;
 }
 #audio:hover {
   transform: scale(1.2, 1.2);
@@ -101,7 +103,7 @@ header {
 
 h1 {
   font-family: "Nothing you could do";
-  font-size: 3rem;
+  font-size: 2.8rem;
   color: map-get($colores, icons);
   margin-top: 20px;
 }
@@ -166,19 +168,19 @@ nav ul li a:hover {
 }
 
 /* carousel*/
-.container {
+.Biografia {
   border-bottom: 2px solid black;
 }
 
 img {
   height: 600px;
 }
-
+// Border Radius
 .br {
   border-radius: 80px;
 }
 
-// Bio
+// Subtitulo Bio
 h2 {
   @extend .extend-h2;
   margin-top: 10px;
@@ -192,18 +194,25 @@ p {
   font-family: "Luxurious Roman";
   font-size: 20px;
 }
+// linea entre parrafos
+.borderbottom {
+  border-bottom: 2px solid black;
+}
 
-/* VIdeos y foto */
+/* VIdeos */
 .multimedia {
   width: 80%;
   margin: 0px 250px;
 }
 
+.nombre {
+  margin-top: 10px;
+}
+
 .nombre h2 {
   @extend .extend-h2;
-  left: 60px;
-  width: 90px;
-  margin-left: 380px;
+  // left: 60px;
+  // width: 90px;
 }
 
 .nombre em {
@@ -212,15 +221,10 @@ p {
   padding-left: 4px;
 }
 
-.videos {
-  grid-area: videos;
-  margin-top: 25px;
-}
-
 .videos iframe {
   @include sizes(400px, 250px);
-  margin-top: 10px;
   margin-left: 20px;
+  margin-top: 20px;
 }
 
 /* footer */
