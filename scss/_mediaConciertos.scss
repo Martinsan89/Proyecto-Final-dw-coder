@@ -1,4 +1,4 @@
-// Mediaqueries Contacto //
+// Mediaqueries Conciertos //
 @media all and (max-width: 1110px) {
   .logo {
     width: 250px;
@@ -18,6 +18,10 @@
   h1 {
     width: 250px;
   }
+
+  .nav-links ul li a {
+    font-size: 22px;
+  }
 }
 
 @media all and (max-width: 660px) {
@@ -31,6 +35,10 @@
     a {
       font-size: 17px;
     }
+  }
+
+  .container p {
+    font-size: 20px;
   }
 }
 
@@ -56,7 +64,7 @@
     display: none;
   }
 
-  .consultas {
+  .conciertos {
     margin: auto;
     width: 100%;
   }
@@ -78,6 +86,13 @@
     li {
       padding: 0px 11px;
     }
+    a {
+      font-size: 19px;
+    }
+  }
+
+  .container p {
+    font-size: 15px;
   }
 }
 

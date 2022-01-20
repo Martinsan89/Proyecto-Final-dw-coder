@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Luxurious+Roman&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -9,11 +8,10 @@
 body {
   background-color: #e9b72f; }
 
-/* Portada */
 header {
-  height: 350px;
   position: relative;
-  border-bottom: 2px solid black; }
+  border-bottom: 2px solid black;
+  height: 350px; }
   header h1 {
     font-family: "Nothing you could do";
     background-color: #353131d5;
@@ -21,18 +19,10 @@ header {
     line-height: 277px;
     display: flex;
     justify-content: center;
-    clip-path: circle(110px);
+    clip-path: circle(100px);
     margin-right: 80px; }
 
-.logo img {
-  width: 300px;
-  height: 280px;
-  border-radius: 40px;
-  position: absolute;
-  left: 20px;
-  padding: 20px; }
-
-.foto img {
+.foto {
   width: 400px;
   height: 270px;
   position: absolute;
@@ -40,7 +30,14 @@ header {
   top: 10px;
   border-radius: 40px; }
 
-/* navmenu */
+.logo {
+  width: 300px;
+  height: 280px;
+  border-radius: 40px;
+  position: absolute;
+  left: 20px;
+  padding: 20px; }
+
 .nav-links {
   margin: 20px;
   position: relative;
@@ -64,96 +61,42 @@ header {
     .nav-links a:hover {
       color: #0088a9; }
 
-h3 {
-  color: white;
-  padding: 20px;
-  line-height: 1.5;
-  font-size: 30px;
-  font-style: oblique; }
+.container iframe {
+  height: 350px; }
 
-p {
-  color: white;
-  align-items: center;
-  line-height: 1.5;
-  font-size: 20px;
-  padding: 20px; }
+.container img {
+  height: 480px; }
 
-iframe {
-  flex-grow: 2;
-  height: 200px; }
+.container p {
+  font-family: "Montserrat";
+  font-size: 25px;
+  font-weight: 700; }
 
-.ms {
-  font-family: "Luxurious Roman";
-  background-color: #24252a;
-  margin: 40px;
-  width: 90%;
-  border-radius: 40px;
-  display: flex; }
-
-.jel {
-  font-family: "Luxurious Roman";
-  background-color: #24252a;
-  margin: 40px;
-  width: 90%;
-  border-radius: 40px;
-  display: flex; }
-
-.dinah {
-  font-family: "Luxurious Roman";
-  background-color: #24252a;
-  margin: 40px;
-  width: 90%;
-  border-radius: 40px;
-  display: flex; }
-  .dinah iframe {
-    height: 300px; }
-
-.dsm {
-  font-family: "Luxurious Roman";
-  background-color: #24252a;
-  margin: 40px;
-  width: 90%;
-  border-radius: 40px;
-  display: flex; }
-
-/* mediaqueries Discografia */
 @media all and (max-width: 1110px) {
-  .logo img {
+  .logo {
     width: 250px; }
-  .foto img {
+  .foto {
     width: 300px; } }
 
 @media all and (max-width: 810px) {
   .logo {
     display: none; }
-  .discografia {
+  .contacto {
     position: absolute; }
   h1 {
     width: 250px; }
-  .ms {
-    margin-top: 30px;
-    display: table-caption;
-    width: 400px; }
-  .jel {
-    margin-top: 30px;
-    display: table-caption;
-    width: 400px; }
-  .dinah {
-    margin-top: 30px;
-    display: table-caption;
-    width: 400px; }
-  .dsm {
-    margin-top: 30px;
-    display: table-caption;
-    width: 400px; } }
+  .nav-links ul li a {
+    font-size: 22px; } }
 
 @media all and (max-width: 660px) {
-  .foto img {
+  .foto {
     width: 250px; }
   .nav-links ul li {
     padding: 8px; }
     .nav-links ul li a {
-      font-size: 17px; } }
+      font-size: 17px; }
+  .container p {
+    font-size: 20px; } }
 
 @media all and (max-width: 520px) {
   header {
@@ -161,15 +104,15 @@ iframe {
     header h1 {
       clip-path: circle(80px);
       width: 180px; }
-  .foto img {
+  .foto {
     margin-top: 15px;
     position: absolute;
     right: 20px;
     height: 250px;
     width: 200px; }
-  .logo img {
+  .logo {
     display: none; }
-  .consultas {
+  .conciertos {
     margin: auto;
     width: 100%; }
   h2 {
@@ -184,24 +127,14 @@ iframe {
     .nav-links li {
       padding: 0px 11px; }
     .nav-links a {
-      font-size: 20px; } }
+      font-size: 19px; }
+  .container p {
+    font-size: 15px; } }
 
 @media all and (max-width: 445px) {
-  .foto img {
-    width: 200px; }
+  .foto {
+    width: 180px; }
   .nav-links ul li {
     padding: 5px; }
     .nav-links ul li li a {
-      font-size: 19px; }
-  .ms {
-    margin-left: 5px;
-    width: 350px; }
-  .jel {
-    margin-left: 5px;
-    width: 350px; }
-  .dinah {
-    margin-left: 5px;
-    width: 350px; }
-  .dsm {
-    margin-left: 5px;
-    width: 350px; } }
+      font-size: 15px; } }

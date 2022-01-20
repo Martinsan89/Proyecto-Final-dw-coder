@@ -113,7 +113,7 @@ nav ul li {
   font-weight: 500;
   margin-top: 10px;
   display: inline-block;
-  padding: 0px 20px; }
+  padding: 0px 10px; }
 
 nav ul li a {
   text-decoration: none;
@@ -220,7 +220,7 @@ footer .icons {
     font-size: 1.8rem;
     margin-top: 35px; }
   .nav-links {
-    left: 15px; }
+    left: 25px; }
   .body-info p {
     font-size: 13px; }
   .foto-toque {
@@ -289,8 +289,10 @@ footer .icons {
     position: absolute;
     right: 10px;
     bottom: 25px; }
-  .nav-links ul li a {
-    font-size: 25px; } }
+  .nav-links ul li {
+    padding: 8px; }
+    .nav-links ul li a {
+      font-size: 17px; } }
 
 @media all and (max-width: 480px) {
   .container-foto {
@@ -319,15 +321,16 @@ footer .icons {
     bottom: 35px;
     width: 250px; }
   .nav-links {
-    position: absolute;
-    left: 30px; }
-  .nav-links ul {
-    height: 50px;
-    margin-bottom: 25px; }
-  .nav-links ul li {
-    padding: -1px; }
-  .nav-links ul li a {
-    font-size: 19px; } }
+    padding-top: 8px;
+    margin-left: 10px; }
+    .nav-links ul {
+      height: 55px;
+      padding-right: 15px;
+      padding-left: 0px; }
+    .nav-links li {
+      padding: 0px 11px; }
+    .nav-links a {
+      font-size: 20px; } }
 
 @media all and (max-width: 430px) {
   #audio {
@@ -340,10 +343,11 @@ footer .icons {
   .nav-links {
     bottom: -30px; }
   .nav-links ul {
-    padding: 5px;
+    padding: 0px 5px;
     margin-bottom: 7px; }
   .nav-links ul li {
-    margin: auto; }
+    margin: auto;
+    padding: 5px; }
   .mf {
     width: 300px; }
   .mt {

@@ -50,17 +50,18 @@ header {
 
 @import "navmenu";
 
-main {
-  margin: 20px auto;
-  width: 50%;
+.container iframe {
+  height: 350px;
 }
 
-.style {
-  background-color: #24252a;
-  padding: 0.5rem;
-  color: #f5ce94;
-  margin: 1rem 0;
-  text-transform: uppercase;
+.container img {
+  height: 480px;
 }
 
-@import "mediaContacto";
+.container p {
+  font-family: "Montserrat";
+  font-size: 25px;
+  font-weight: 700;
+}
+
+@import "mediaConciertos";
