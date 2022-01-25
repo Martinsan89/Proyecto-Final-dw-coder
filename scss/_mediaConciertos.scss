@@ -1,111 +1,106 @@
 // Mediaqueries Conciertos //
-@media all and (max-width: 1110px) {
-  .logo {
-    width: 250px;
-  }
-  .foto {
-    width: 300px;
-  }
-}
-
-@media all and (max-width: 810px) {
+@media all and (max-width: 1080px) {
   .logo {
     display: none;
   }
-  .contacto {
-    position: absolute;
+}
+
+@media all and (max-width: 950px) {
+  header {
+    justify-content: space-between;
+    h1 {
+      font-size: 2rem;
+      clip-path: circle(90px);
+    }
+
+    .foto-conciertos {
+      width: 25em;
+    }
   }
-  h1 {
-    width: 250px;
+}
+
+@media all and (max-width: 700px) {
+  header {
+    h1 {
+      font-size: 1.7rem;
+    }
+
+    .foto-conciertos {
+      width: 20em;
+    }
   }
 
   .nav-links ul li a {
-    font-size: 22px;
-  }
-}
-
-@media all and (max-width: 660px) {
-  .foto {
-    width: 250px;
-  }
-
-  .nav-links ul li {
-    padding: 8px;
-
-    a {
-      font-size: 17px;
-    }
+    font-size: 1.3rem;
   }
 
   .container p {
-    font-size: 20px;
+    font-size: 1.5rem;
   }
 }
 
-@media all and (max-width: 520px) {
+@media all and (max-width: 600px) {
+  .foto-conciertos {
+    width: 18rem;
+    margin-right: 1em;
+  }
+
+  .nav-links ul li a {
+    font-size: 1rem;
+  }
+}
+
+@media all and (max-width: 540px) {
   header {
-    position: relative;
-
     h1 {
-      clip-path: circle(80px);
-      width: 180px;
+      font-size: 1.2rem;
+      clip-path: circle(70px);
+      padding-left: 1.3em;
+      margin-left: 0.5em;
+    }
+
+    .foto-conciertos {
+      width: 13rem;
+      height: 13rem;
+      margin-right: 0.5em;
     }
   }
 
-  .foto {
-    margin-top: 15px;
-    position: absolute;
-    right: 20px;
-    height: 250px;
-    width: 200px;
+  h4 {
+    font-size: 1.3rem;
   }
 
-  .logo {
-    display: none;
+  // Footer
+  footer a {
+    font-size: 1rem;
   }
 
-  .conciertos {
-    margin: auto;
-    width: 100%;
-  }
-
-  h2 {
-    margin-left: 20px;
-  }
-
-  .nav-links {
-    padding-top: 8px;
-    margin-left: 10px;
-
-    ul {
-      height: 55px;
-      padding-right: 15px;
-      padding-left: 0px;
-    }
-
-    li {
-      padding: 0px 11px;
-    }
-    a {
-      font-size: 19px;
-    }
-  }
-
-  .container p {
-    font-size: 15px;
+  .icons {
+    padding-top: 0.5rem;
   }
 }
 
-@media all and (max-width: 445px) {
-  .foto {
-    width: 180px;
+@media all and (max-width: 440px) {
+  header {
+    .foto-conciertos {
+      width: 10rem;
+      height: 10rem;
+    }
   }
 
-  .nav-links ul li {
-    padding: 5px;
+  .nav-links ul li a {
+    font-size: 0.8rem;
+  }
 
-    li a {
-      font-size: 15px;
-    }
+  .container img {
+    height: 20em;
+  }
+
+  .container iframe {
+    height: 20em;
+  }
+
+  .container p {
+    font-size: 1rem;
   }
 }

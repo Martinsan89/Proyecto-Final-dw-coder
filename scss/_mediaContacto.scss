@@ -1,96 +1,86 @@
 // Mediaqueries Contacto //
-@media all and (max-width: 1110px) {
-  .logo {
-    width: 250px;
-  }
-  .foto {
-    width: 300px;
-  }
-}
-
-@media all and (max-width: 810px) {
+@media all and (max-width: 1080px) {
   .logo {
     display: none;
   }
-  .contacto {
-    position: absolute;
-  }
-  h1 {
-    width: 250px;
-  }
 }
 
-@media all and (max-width: 660px) {
-  .foto {
-    width: 250px;
-  }
-
-  .nav-links ul li {
-    padding: 8px;
-
-    a {
-      font-size: 17px;
-    }
-  }
-}
-
-@media all and (max-width: 520px) {
+@media all and (max-width: 950px) {
   header {
-    position: relative;
-
+    justify-content: space-between;
     h1 {
-      clip-path: circle(80px);
-      width: 180px;
-    }
-  }
-
-  .foto {
-    margin-top: 15px;
-    position: absolute;
-    right: 20px;
-    height: 250px;
-    width: 200px;
-  }
-
-  .logo {
-    display: none;
-  }
-
-  .consultas {
-    margin: auto;
-    width: 100%;
-  }
-
-  h2 {
-    margin-left: 20px;
-  }
-
-  .nav-links {
-    padding-top: 8px;
-    margin-left: 10px;
-
-    ul {
-      height: 55px;
-      padding-right: 15px;
-      padding-left: 0px;
+      font-size: 2rem;
+      clip-path: circle(90px);
     }
 
-    li {
-      padding: 0px 11px;
+    .foto-contacto {
+      width: 25em;
     }
   }
 }
 
-@media all and (max-width: 445px) {
-  .foto {
-    width: 180px;
+@media all and (max-width: 700px) {
+  header {
+    h1 {
+      font-size: 1.7rem;
+    }
+
+    .foto-contacto {
+      width: 20em;
+    }
   }
 
-  .nav-links ul li {
-    padding: 5px;
+  .nav-links ul li a {
+    font-size: 1.3rem;
+  }
+}
 
-    li a {
-      font-size: 15px;
+@media all and (max-width: 600px) {
+  .foto-contacto {
+    width: 18rem;
+    margin-right: 1em;
+  }
+
+  .nav-links ul li a {
+    font-size: 1rem;
+  }
+}
+
+@media all and (max-width: 540px) {
+  header {
+    h1 {
+      font-size: 1.2rem;
+      clip-path: circle(70px);
+      padding-left: 1.3em;
+      margin-left: 0.5em;
     }
+
+    .foto-contacto {
+      width: 13rem;
+      height: 13rem;
+      margin-right: 0.5em;
+    }
+  }
+
+  // Footer
+  footer a {
+    font-size: 1rem;
+  }
+
+  .icons {
+    padding-top: 0.5rem;
+  }
+}
+
+@media all and (max-width: 440px) {
+  header {
+    .foto-contacto {
+      width: 10rem;
+      height: 10rem;
+    }
+  }
+
+  .nav-links ul li a {
+    font-size: 0.8rem;
   }
 }

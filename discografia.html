@@ -4,15 +4,22 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- descripcion -->
+    <!-- Descripcion SEO -->
     <meta
       name="description"
       content="Página dedica a la discografía como vibrafonista de Martin Sanchez"
     />
-    <!-- Tags -->
+    <!-- Tags SEO -->
     <meta
       name="keywords"
       content="discografia, album, vibrafón, vibráfono, percusión"
+    />
+    <!-- Fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
     />
     <!-- Favicon -->
     <link rel="shorcut icon" href="./img/favicon-32x32.png" />
@@ -25,44 +32,34 @@
     />
     <!-- CSS -->
     <link rel="stylesheet" href="./css/discografia.css" />
-    <!-- titulo -->
+    <!-- Titulo -->
     <title>Martin Sanchez/Discografia</title>
   </head>
   <body>
-    <header>
+    <header id="top">
       <!-- Logo -->
-      <div class="logo">
-        <img src="./img/logo.png" alt="logo" />
-      </div>
+      <img class="logo" src="./img/logo.png" alt="logo" />
       <!-- Encabezado -->
-      <div class="discografia">
-        <h1>
-          <em>Discografia</em>
-        </h1>
-      </div>
-      <!-- Foto -->
-      <div class="foto">
-        <img src="./img/sabato.jpg" alt="discografia" />
-      </div>
+      <h1 class="discografia">Discografia</h1>
+      <!-- Foto- Sabato -->
+      <img class="foto-sabato" src="./img/sabato.jpg" alt="discografia" />
     </header>
-    <!-- navmenu -->
+    <!-- Navmenu -->
     <nav class="nav-links">
       <ul>
         <li><a href="index.html">Home</a></li>
-        <li><a href="discografia.html">Discografia</a></li>
+        <li><a href="discografia.html">Música</a></li>
         <li><a href="contacto.html">Contacto</a></li>
-        <li><a href="conciertos.html">Conciertos</a></li>
+        <li><a href="conciertos.html">Gigs</a></li>
       </ul>
     </nav>
-    <!-- accordion con los albums-->
+    <!-- Accordion con los albums-->
     <section class="ms animate__animated animate__bounceInLeft">
-      <div>
+      <div class="mt-2">
         <h3>Celebrando al Vibrafón</h3>
       </div>
       <div>
         <iframe
-          width="350"
-          height="200px"
           src="https://www.youtube.com/embed/mkcQH9atqJo"
           title="YouTube video player"
           frameborder="0"
@@ -75,20 +72,18 @@
           Disco homenaje a la historia del vibráfono o vibrafón, en su recorrido
           por el jazz.
           <br />
-          Junto a Ramiro Penovi en guitarra, Jero Carmona en contrabajo y Gérman
-          Boco en batería.
+          Junto a Ramiro Penovi en guitarra, Jerónimo Carmona en contrabajo y
+          Gérman Boco en batería.
         </p>
       </div>
     </section>
-    <br />
     <section class="jel animate__animated animate__bounceInRight">
-      <div>
+      <div class="mt-2">
         <h3>Juega el Loco</h3>
       </div>
       <div>
         <iframe
           src="https://open.spotify.com/embed/album/42TJiVAFcIdGbw7VakPHXt?utm_source=generator"
-          width="350px"
           frameborder="0"
           allowfullscreen=""
           allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
@@ -103,14 +98,12 @@
         </p>
       </div>
     </section>
-    <br />
     <section class="dinah animate__animated animate__bounceInLeft">
-      <div>
+      <div class="mt-2">
         <h3>Dinah</h3>
       </div>
       <div>
         <iframe
-          style="border: 0; width: 350px; height: 120px"
           src="https://bandcamp.com/EmbeddedPlayer/album=1994860131/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/"
           seamless
           ><a href="https://dinahtrio.bandcamp.com/album/oh-dinah"
@@ -128,15 +121,12 @@
         </p>
       </div>
     </section>
-    <br />
     <section class="dsm animate__animated animate__bounceInRight">
-      <div>
+      <div class="mt-2">
         <h3>Duo Sanchez-Martinini</h3>
       </div>
       <div>
         <iframe
-          width="350"
-          height="200px"
           src="https://www.youtube.com/embed/XpSDDMgcAPo"
           title="YouTube video player"
           frameborder="0"
@@ -152,7 +142,29 @@
         </p>
       </div>
     </section>
-    <!-- js -->
+    <!-- Footer -->
+    <footer>
+      <!-- Link para ir al inicio -->
+      <h3>
+        <a href="#top">UP</a>
+      </h3>
+      <!-- Redes -->
+      <div class="icons">
+        <a href="https://www.instagram.com/martin.sanchez.89/" target="blank">
+          <i class="fab fa-instagram fa-2x fa-color"></i>
+        </a>
+        <a href="https://m.facebook.com/martin.sanchez.50746" target="blank">
+          <i class="fab fa-facebook fa-2x fa-color"></i>
+        </a>
+        <a
+          href="https://www.youtube.com/channel/UCVQ7NFGNPhAsKy4sdvT0UZQ"
+          target="blank"
+        >
+          <i class="fab fa-youtube fa-2x fa-color"></i>
+        </a>
+      </div>
+    </footer>
+    <!-- JavaScript -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"

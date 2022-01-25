@@ -4,13 +4,23 @@
 
 $bgbody: #e9b72f;
 
+html {
+  font-size: 16px;
+}
+
 @mixin discos {
   font-family: "Luxurious Roman";
   background-color: #24252a;
-  margin: 40px;
+  margin: 3em;
   width: 90%;
-  border-radius: 40px;
+  border-radius: 3em;
   display: flex;
+}
+
+.extend-portada2 {
+  border-radius: 2em;
+  margin-top: 0.5em;
+  margin-bottom: 3em;
 }
 
 * {
@@ -26,69 +36,68 @@ body {
 /* Portada */
 
 header {
-  height: 350px;
+  height: 19rem;
   position: relative;
-  border-bottom: 2px solid black;
+  border-bottom: 0.1em solid black;
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5em;
 
   h1 {
     font-family: "Nothing you could do";
     background-color: #353131d5;
     color: $bgbody;
-    line-height: 277px;
-    display: flex;
-    justify-content: center;
+    line-height: 18rem;
     clip-path: circle(110px);
-    margin-right: 80px;
+    width: 8em;
+    padding-left: 1.3em;
   }
 }
 
-.logo img {
-  width: 300px;
-  height: 280px;
-  border-radius: 40px;
-  position: absolute;
-  left: 20px;
-  padding: 20px;
+.logo {
+  width: 15rem;
+  @extend .extend-portada2;
+  margin-left: 3em;
 }
 
-.foto img {
-  width: 400px;
-  height: 270px;
-  position: absolute;
-  right: 30px;
-  top: 10px;
-  border-radius: 40px;
+.foto-sabato {
+  width: 30rem;
+  @extend .extend-portada2;
+  margin-right: 3em;
 }
 
-/* navmenu */
+/* Navmenu */
 
 @import "navmenu";
 
 // Discos
 
 h3 {
+  width: 13rem;
   color: white;
-  padding: 20px;
-  line-height: 1.5;
-  font-size: 30px;
+  padding: 1rem;
+  padding-left: 0.7em;
+  line-height: 2.5em;
+  font-size: 1.7rem;
   font-style: oblique;
 }
 
 p {
   color: white;
   align-items: center;
-  line-height: 1.5;
-  font-size: 20px;
-  padding: 20px;
+  line-height: 1.5em;
+  font-size: 1.3rem;
+  padding: 1em;
 }
 
 iframe {
-  flex-grow: 2;
-  height: 200px;
+  width: 25rem;
+  height: 20rem;
 }
 
 .ms {
   @include discos();
+  margin-top: -2em;
 }
 
 .jel {
@@ -98,12 +107,52 @@ iframe {
 .dinah {
   @include discos();
   iframe {
-    height: 300px;
+    height: 8rem;
   }
 }
 
 .dsm {
   @include discos();
+}
+
+/* Footer */
+footer {
+  height: 4rem;
+  background-color: #353131d5;
+  border-top: 3px black solid;
+  display: flex;
+  justify-content: center;
+
+  h3 {
+    font-family: "Montserrat";
+    padding-top: 0.5rem;
+    &:hover {
+      transform: scale(1.2, 1.2);
+    }
+  }
+  a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: #f5ce94;
+    transition: all 0.3s ease 0s;
+    margin-left: 2rem;
+    &:hover {
+      color: #118048;
+    }
+  }
+}
+
+.icons {
+  margin-right: 3rem;
+
+  i:hover {
+    color: #118048;
+    transform: scale(1.2, 1.2);
+  }
+}
+
+.fa-color {
+  color: #f5ce94;
 }
 
 @import "mediaDiscografia";

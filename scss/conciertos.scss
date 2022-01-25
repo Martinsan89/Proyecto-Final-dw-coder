@@ -1,7 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap");
 
-$primary_color: #e9b72f;
+$bgbody: #e9b72f;
+
+html {
+  font-size: 16px;
+}
+
+.extend-portada2 {
+  border-radius: 2em;
+  margin-top: 0.5em;
+  margin-bottom: 3em;
+}
 
 * {
   margin: 0;
@@ -10,58 +20,107 @@ $primary_color: #e9b72f;
 }
 
 body {
-  background-color: $primary_color;
+  background-color: $bgbody;
 }
 
 header {
+  height: 19rem;
   position: relative;
-  border-bottom: 2px solid black;
-  height: 350px;
+  border-bottom: 0.1em solid black;
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5em;
 
   h1 {
     font-family: "Nothing you could do";
     background-color: #353131d5;
-    color: $primary_color;
-    line-height: 277px;
-    display: flex;
-    justify-content: center;
-    clip-path: circle(100px);
-    margin-right: 80px;
+    color: $bgbody;
+    line-height: 18rem;
+    clip-path: circle(110px);
+    width: 8em;
+    padding-left: 2em;
   }
 }
 
-.foto {
-  width: 400px;
-  height: 270px;
-  position: absolute;
-  right: 30px;
-  top: 10px;
-  border-radius: 40px;
-}
-
+// Portada
 .logo {
-  width: 300px;
-  height: 280px;
-  border-radius: 40px;
-  position: absolute;
-  left: 20px;
-  padding: 20px;
+  width: 15rem;
+  @extend .extend-portada2;
+  margin-left: 3em;
 }
 
+.foto-conciertos {
+  width: 30rem;
+  @extend .extend-portada2;
+  margin-right: 3em;
+}
+
+// Navmenu
 @import "navmenu";
 
+// Scrollspy
+.albums {
+  margin-top: -2em;
+}
+
+h4 {
+  font-size: 2rem;
+}
+
 .container iframe {
-  height: 350px;
+  height: 30em;
+  margin: auto;
 }
 
 .container img {
-  height: 480px;
+  height: 30em;
+  margin: auto;
 }
 
 .container p {
   font-family: "Montserrat";
-  font-size: 25px;
+  font-size: 2rem;
   font-weight: 700;
+}
+
+/* Footer */
+footer {
+  height: 4rem;
+  background-color: #353131d5;
+  border-top: 3px black solid;
+  display: flex;
+  justify-content: center;
+
+  h3 {
+    font-family: "Montserrat";
+    padding-top: 0.5rem;
+    &:hover {
+      transform: scale(1.2, 1.2);
+    }
+  }
+  a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: #f5ce94;
+    transition: all 0.3s ease 0s;
+    margin-left: 2rem;
+    &:hover {
+      color: #118048;
+    }
+  }
+}
+
+.icons {
+  margin-right: 3rem;
+
+  i:hover {
+    color: #118048;
+    transform: scale(1.2, 1.2);
+  }
+}
+
+.fa-color {
+  color: #f5ce94;
 }
 
 @import "mediaConciertos";

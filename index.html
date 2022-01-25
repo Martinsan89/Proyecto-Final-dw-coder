@@ -4,55 +4,50 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- descripcion -->
+    <!-- Descripcion SEO -->
     <meta
       name="description"
       content="Martin Sanchez es un vibrafonista argentino dedicado a recorrer junto a su vibrafon, los caminos de la musica y sus diversas expresiones"
     />
-    <!-- tags -->
+    <!-- Tags SEO -->
     <meta
       name="keywords"
       content="musica, vibrafonista, vibrafon, vibrafono, percusion "
     />
-    <!-- fontawesome -->
+    <!-- Fontawesome -->
     <link
       rel="stylesheet"
       href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
       integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
       crossorigin="anonymous"
     />
-    <!-- favicon -->
+    <!-- Favicon -->
     <link rel="shorcut icon" href="./img/favicon-32x32.png" />
-    <!-- boostrap -->
+    <!-- Boostrap -->
     <link rel="stylesheet" href="./bs-css/bootstrap.min.css" />
-    <!-- link al archivo css -->
+    <!-- Link al archivo css -->
     <link rel="stylesheet" href="./css/style.css" />
-    <!-- titulo -->
+    <!-- Titulo -->
     <title>Martin Sanchez/Home</title>
   </head>
   <body>
     <!--Portada (fotos y logo)/ Encabezado (audio, H1, redes)/Navmenu-->
     <header>
-      <div class="container-foto">
+      <div class="container-foto" id="top">
         <img class="portada" src="./img/fotoPortada.jpg" alt="fotoPortada" />
         <img class="logo" src="./img/logo.png" alt="logo" />
         <img class="perfil" src="./img/fotoPerfil.jpg" alt="fotoPerfil" />
       </div>
-      <!-- Audio-->
       <div class="container-redes">
+        <!-- Audio-->
         <div>
-          <audio
-            id="audio"
-            src="./audio/6 - Stardust.mp3"
-            preload="auto"
-            controls
-          ></audio>
+          <audio src="./audio/6 - Stardust.mp3" preload="auto" controls></audio>
         </div>
+        <!-- Encabezado -->
         <div>
-          <!-- Encabezado -->
           <h1>Martin Sanchez / Vibrafonista</h1>
         </div>
-        <!-- redes -->
+        <!-- Redes -->
         <div>
           <ul>
             <li>
@@ -82,14 +77,13 @@
           </ul>
         </div>
       </div>
-      <br />
       <!-- Navmenu -->
       <nav class="nav-links">
         <ul>
           <li><a href="index.html">Home</a></li>
-          <li><a href="discografia.html">Discografia</a></li>
+          <li><a href="discografia.html">Música</a></li>
           <li><a href="contacto.html">Contacto</a></li>
-          <li><a href="conciertos.html">Conciertos</a></li>
+          <li><a href="conciertos.html">Gigs</a></li>
         </ul>
       </nav>
     </header>
@@ -97,8 +91,8 @@
       <!-- Biografia y Videos -->
       <section class="Biografia">
         <!-- Carousel -->
-        <div class="container row mx-5">
-          <div class="col-6 mt-5 mf">
+        <div class="container row">
+          <div class="col-lg-6 col-sm-12 mt-5">
             <div
               id="carouselExampleIndicators"
               class="carousel slide"
@@ -176,7 +170,7 @@
             </div>
           </div>
           <!-- Biografia -->
-          <div class="col-6 text-right mt">
+          <div class="col-lg-6 col-sm-12 text-right mt">
             <!-- Subtitulo Bio -->
             <h2 class="mt-5 text-center">Bio</h2>
             <!-- Texto Bio -->
@@ -213,11 +207,9 @@
       </section>
       <!-- Segunda seccion (subtitulo y multimedia) -->
       <section class="multimedia">
+        <!-- Subtitulo  -->
         <div class="nombre">
-          <!-- Subtitulo  -->
-          <h2>
-            <em>Videos</em>
-          </h2>
+          <h2>Videos</h2>
         </div>
         <!-- Videos  -->
         <div class="videos">
@@ -256,7 +248,7 @@
     <footer>
       <!-- link para ir al inicio -->
       <h3>
-        <a href="#top">Inicio</a>
+        <a href="#top">UP</a>
       </h3>
       <!-- redes -->
       <div class="icons">
@@ -274,7 +266,7 @@
         </a>
       </div>
     </footer>
-    <!-- js -->
+    <!-- JavaScript -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"

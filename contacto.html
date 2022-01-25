@@ -4,13 +4,20 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Descripcion -->
+    <!-- Descripcion SEO -->
     <meta
       name="description"
       content="Para contactarse por consultas, clases, contrataciones con Martin Sanchez"
     />
-    <!-- Tags -->
+    <!-- Tags SEO -->
     <meta name="keywords" content="contacto, vibráfono, vibrafón" />
+    <!-- Fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
     <!-- Favicon -->
     <link rel="shorcut icon" href="./img/favicon-32x32.png" />
     <!-- Bootstrap -->
@@ -21,25 +28,21 @@
     <title>Martin Sanchez/Contacto</title>
   </head>
   <body>
-    <header>
+    <header id="top">
       <!-- Logo -->
       <img class="logo" src="./img/logo.png" alt="logo" />
       <!-- Encabezado -->
-      <div class="contacto">
-        <h1>
-          <em>Contacto</em>
-        </h1>
-      </div>
+      <h1 class="contacto">Contacto</h1>
       <!-- Foto -->
-      <img class="foto" src="./img/contacto.jpg" alt="contacto" width="400px" />
+      <img class="foto-contacto" src="./img/contacto.jpg" alt="contacto" />
     </header>
     <!-- Navmenu -->
     <nav class="nav-links">
       <ul>
         <li><a href="index.html">Home</a></li>
-        <li><a href="discografia.html">Discografia</a></li>
+        <li><a href="discografia.html">Música</a></li>
         <li><a href="contacto.html">Contacto</a></li>
-        <li><a href="conciertos.html">Conciertos</a></li>
+        <li><a href="conciertos.html">Gigs</a></li>
       </ul>
     </nav>
     <main class="consultas">
@@ -90,12 +93,34 @@
             >Noticias/News</label
           >
         </div>
-        <button type="submit" class="btn btn-success style">
+        <button type="submit" class="btn btn-success btn-style">
           Enviar/Submit
         </button>
       </form>
     </main>
-    <!-- js -->
+    <!-- Footer -->
+    <footer>
+      <!-- Link para ir al inicio -->
+      <h3>
+        <a href="#top">UP</a>
+      </h3>
+      <!-- Redes -->
+      <div class="icons">
+        <a href="https://www.instagram.com/martin.sanchez.89/" target="blank">
+          <i class="fab fa-instagram fa-2x fa-color"></i>
+        </a>
+        <a href="https://m.facebook.com/martin.sanchez.50746" target="blank">
+          <i class="fab fa-facebook fa-2x fa-color"></i>
+        </a>
+        <a
+          href="https://www.youtube.com/channel/UCVQ7NFGNPhAsKy4sdvT0UZQ"
+          target="blank"
+        >
+          <i class="fab fa-youtube fa-2x fa-color"></i>
+        </a>
+      </div>
+    </footer>
+    <!-- JacaScript -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"

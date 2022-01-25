@@ -14,9 +14,11 @@ $colores: (
 
 // Extend //
 .extend-h2 {
+  font-family: "Nothing you could do", serif;
   background-color: map-get($colores, redes);
   color: map-get($colores, primario);
-  line-height: 74px;
+
+  line-height: 5rem;
   clip-path: circle(at 50% 50%);
   margin: auto;
 }
@@ -33,39 +35,39 @@ $colores: (
   padding: 0px;
 }
 
+html {
+  font-size: 16px;
+}
+
 body {
   background-color: map-get($colores, primario);
-  margin: -20px;
+  margin: -2rem;
 }
 
 header {
   position: relative;
   border-bottom: 2px solid black;
-  @include sizes(100%, 397px);
+  @include sizes(100%, 26rem);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 /* Portada (fotos y logo) */
 .container-foto {
-  @include sizes(auto, 260px);
-  margin-top: 20px;
+  @include sizes(100%, 16rem);
+  margin-top: 1rem;
   background-color: #090506;
   display: flex;
   justify-content: space-between;
-}
+  gap: 0.5rem;
 
-.logo img {
-  width: 200px;
-}
-
-.perfil img {
-  width: 200px;
-}
-
-.container-foto img {
-  @include sizes(auto, 100%);
-  animation-name: portada;
-  animation-timing-function: ease-in;
-  animation-duration: 3s;
+  img {
+    height: 100%;
+    animation-name: portada;
+    animation-timing-function: ease-in;
+    animation-duration: 3s;
+  }
 }
 
 @keyframes portada {
@@ -83,50 +85,49 @@ header {
 /* links redes */
 .container-redes {
   background-color: map-get($colores, redes);
-  height: 100px;
+  @include sizes(100%, 6rem);
+  margin-top: -3rem;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 
 /* Audio */
-#audio {
-  padding: 10px 10px;
-  margin-top: 20px;
-  margin-left: 20px;
-}
-#audio:hover {
-  transform: scale(1.2, 1.2);
+audio {
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+  margin-left: 2rem;
+  &:hover {
+    transform: scale(1.2, 1.2);
+  }
 }
 
 // Encabezado
 
 h1 {
   font-family: "Nothing you could do";
-  font-size: 2.8rem;
+  font-size: 2.2rem;
   color: map-get($colores, icons);
-  margin-top: 20px;
+  padding-top: 1.5rem;
 }
 
 // Redes
 .container-redes ul {
-  padding: 20px;
+  padding: 1rem;
   display: inline-block;
-}
 
-.container-redes ul li {
-  padding-right: 10px;
-  display: inline-block;
-  justify-content: center;
-}
+  li {
+    margin-right: 1rem;
+    display: inline-block;
+  }
 
-.container-redes ul a i {
-  transition: all 0.3s ease 0s;
-}
-
-.container-redes ul a i:hover {
-  color: map-get($colores, hover);
-  transform: scale(1.2, 1.2);
+  i {
+    transition: all 0.3s ease 0s;
+    &:hover {
+      color: map-get($colores, hover);
+      transform: scale(1.2, 1.2);
+    }
+  }
 }
 
 .fa-color {
@@ -134,144 +135,117 @@ h1 {
 }
 
 /* navbar */
+@import "navmenu";
 .nav-links {
   position: absolute;
-  bottom: -54px;
-  left: 60px;
+  bottom: -5rem;
+  left: 2rem;
 }
 
-nav ul {
-  background-color: map-get($colores, nav);
-  padding-bottom: 10px;
-}
-nav ul:hover {
-  transform: scale(1.2, 1.2);
-}
-
-nav ul li {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 500;
-  margin-top: 10px;
-  display: inline-block;
-  padding: 0px 10px;
-}
-
-nav ul li a {
-  text-decoration: none;
-  font-size: 35px;
-  color: map-get($colores, icons);
-  transition: all 0.3s ease 0s;
-}
-
-nav ul li a:hover {
-  color: map-get($colores, hover);
-}
-
-/* carousel*/
+// Seccion Biografia
 .Biografia {
   border-bottom: 2px solid black;
+  margin-top: 1rem;
 }
 
-img {
-  height: 600px;
+.container {
+  margin: 1rem auto;
+
+  h2 {
+    @extend .extend-h2;
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+  }
+
+  img {
+    height: 45rem;
+  }
+
+  p {
+    font-family: "Luxurious Roman";
+    font-size: 1.5em;
+    margin-top: 1em;
+  }
 }
+
 // Border Radius
 .br {
-  border-radius: 80px;
+  border-radius: 4rem;
 }
 
-// Subtitulo Bio
-h2 {
-  @extend .extend-h2;
-  margin-top: 10px;
-  font-size: 30px;
-  display: flex;
-  justify-content: center;
-  font-family: "Nothing you could do", serif;
-}
-
-p {
-  font-family: "Luxurious Roman";
-  font-size: 20px;
-}
-// linea entre parrafos
+// Linea entre parrafos
 .borderbottom {
   border-bottom: 2px solid black;
 }
 
-/* VIdeos */
+// Seccion Multimedia
 .multimedia {
   width: 80%;
-  margin: 0px 250px;
+  margin: 1rem auto;
 }
 
 .nombre {
-  margin-top: 10px;
+  margin-top: 2rem;
+
+  h2 {
+    @extend .extend-h2;
+    font-size: 1.7em;
+    display: flex;
+    justify-content: center;
+  }
 }
 
-.nombre h2 {
-  @extend .extend-h2;
-  // left: 60px;
-  // width: 90px;
-}
+.videos {
+  margin: 1em auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 
-.nombre em {
-  font-family: "Nothing you could do";
-  font-size: 22px;
-  padding-left: 4px;
-}
-
-.videos iframe {
-  @include sizes(400px, 250px);
-  margin-left: 20px;
-  margin-top: 20px;
+  iframe {
+    @include sizes(25rem, 15rem);
+    margin: 1rem;
+  }
 }
 
 /* footer */
 footer {
+  height: 4rem;
   background-color: map-get($colores, redes);
   border-top: 3px black solid;
   display: flex;
-  height: 46px;
+  justify-content: center;
+
+  h3 {
+    font-family: "Montserrat";
+    padding-top: 0.5rem;
+    &:hover {
+      transform: scale(1.2, 1.2);
+    }
+  }
+  a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: map-get($colores, icons);
+    transition: all 0.3s ease 0s;
+    margin-left: 2rem;
+    &:hover {
+      color: map-get($colores, hover);
+    }
+  }
 }
 
-footer h3 {
-  font-family: "Montserrat";
-  font-size: 28px;
-  margin-left: 120px;
-}
-footer h3:hover {
-  transform: scale(1.2, 1.2);
+.icons {
+  margin-right: 3rem;
+
+  i:hover {
+    color: map-get($colores, hover);
+    transform: scale(1.2, 1.2);
+  }
 }
 
-footer a {
-  text-decoration: none;
-  font-size: 20px;
+.fa-color {
   color: map-get($colores, icons);
-  transition: all 0.3s ease 0s;
-  padding-right: 20px;
-}
-
-footer a:hover {
-  color: map-get($colores, hover);
-}
-
-footer .icons {
-  position: absolute;
-  right: 120px;
-}
-
-.icons .fa-color {
-  color: map-get($colores, icons);
-}
-
-.icons a i {
-  transition: all 0.3s ease 0s;
-}
-
-.icons a i:hover {
-  color: map-get($colores, hover);
-  transform: scale(1.2, 1.2);
 }
 
 @import "mediaStyle";

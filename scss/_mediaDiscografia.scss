@@ -1,141 +1,125 @@
-/* mediaqueries Discografia */
+/* Mediaqueries Discografia */
 
-@mixin discos810px {
-  margin-top: 30px;
-  display: table-caption;
-  width: 400px;
+@mixin discos-vertical {
+  flex-direction: column;
+  align-items: center;
+  margin-left: 1em;
 }
 
-@media all and (max-width: 1110px) {
-  .logo img {
-    width: 250px;
-  }
-  .foto img {
-    width: 300px;
-  }
-}
-
-@media all and (max-width: 810px) {
+@media all and (max-width: 1080px) {
   .logo {
     display: none;
   }
-  .discografia {
-    position: absolute;
+
+  h3 {
+    line-height: 1em;
+    width: auto;
   }
-  h1 {
-    width: 250px;
-  }
+
   .ms {
-    @include discos810px();
+    @include discos-vertical;
   }
   .jel {
-    @include discos810px();
+    @include discos-vertical;
   }
 
   .dinah {
-    @include discos810px();
+    @include discos-vertical;
   }
 
   .dsm {
-    @include discos810px();
+    @include discos-vertical;
   }
 }
 
-@media all and (max-width: 660px) {
-  .foto img {
-    width: 250px;
-  }
-
-  .nav-links ul li {
-    padding: 8px;
-
-    a {
-      font-size: 17px;
-    }
-  }
-}
-
-@media all and (max-width: 520px) {
+@media all and (max-width: 950px) {
   header {
-    position: relative;
-
+    justify-content: space-between;
     h1 {
-      clip-path: circle(80px);
-      width: 180px;
-    }
-  }
-
-  .foto img {
-    margin-top: 15px;
-    position: absolute;
-    right: 20px;
-    height: 250px;
-    width: 200px;
-  }
-
-  .logo img {
-    display: none;
-  }
-
-  .consultas {
-    margin: auto;
-    width: 100%;
-  }
-
-  h2 {
-    margin-left: 20px;
-  }
-
-  .nav-links {
-    padding-top: 8px;
-    margin-left: 10px;
-
-    ul {
-      height: 55px;
-      padding-right: 15px;
-      padding-left: 0px;
+      font-size: 2rem;
+      clip-path: circle(90px);
     }
 
-    li {
-      padding: 0px 11px;
-    }
-
-    a {
-      font-size: 20px;
+    .foto-sabato {
+      width: 25em;
     }
   }
 }
 
-@media all and (max-width: 445px) {
-  .foto img {
-    width: 200px;
-  }
+@media all and (max-width: 700px) {
+  header {
+    h1 {
+      font-size: 1.7rem;
+    }
 
-  .nav-links ul li {
-    padding: 5px;
-
-    li a {
-      font-size: 19px;
+    .foto-sabato {
+      width: 20em;
     }
   }
 
-  .ms {
-    margin-left: 5px;
-    width: 350px;
+  .nav-links ul li a {
+    font-size: 1.3rem;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .foto-sabato {
+    width: 18rem;
+    margin-right: 1em;
   }
 
-  .jel {
-    margin-left: 5px;
-    width: 350px;
+  .nav-links ul li a {
+    font-size: 1rem;
+  }
+}
+
+@media all and (max-width: 540px) {
+  header {
+    h1 {
+      font-size: 1.2rem;
+      clip-path: circle(70px);
+      padding-left: 1.3em;
+      margin-left: 0.5em;
+    }
+
+    .foto-sabato {
+      width: 13rem;
+      height: 13rem;
+      margin-right: 0.5em;
+    }
   }
 
-  .dinah {
-    margin-left: 5px;
-    width: 350px;
+  // Footer
+  footer a {
+    font-size: 1rem;
   }
 
-  .dsm {
-    margin-left: 5px;
-    width: 350px;
+  .icons {
+    padding-top: 0.5rem;
+  }
+}
+
+@media all and (max-width: 440px) {
+  header {
+    .foto-sabato {
+      width: 10rem;
+      height: 10rem;
+    }
+  }
+
+  .nav-links ul li a {
+    font-size: 0.8rem;
+  }
+  // Discos
+  h3 {
+    font-size: 1.2rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  iframe {
+    width: 19rem;
   }
 }

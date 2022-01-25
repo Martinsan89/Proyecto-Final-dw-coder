@@ -1,262 +1,148 @@
 /* mediaqueries Style */
-@media all and (max-width: 1199px) {
-  h1 {
-    font-size: 2.5rem;
-  }
-}
 
-@media all and (max-width: 1096px) {
-  h1 {
-    font-size: 2.2rem;
-  }
-}
+@media all and (max-width: 1025px) {
+  // Fotos portada
 
-@media all and (max-width: 1024px) {
-  h1 {
-    font-size: 1.8rem;
-    margin-top: 35px;
-  }
-
-  .nav-links {
-    left: 25px;
-  }
-
-  .body-info p {
-    font-size: 13px;
-  }
-
-  .foto-toque {
-    height: 600px;
-    margin-top: 20px;
-  }
-
-  .videos iframe {
-    width: 300px;
-  }
-}
-
-@media all and (max-width: 991px) {
-  // Carousel y Bio
-  .mf {
-    width: 90%;
-  }
-
-  .foto-colon {
-    width: 164px;
-    height: 420px;
-    margin-top: 90px;
-  }
-  // Subtitulo Bio
-  .body-info {
-    margin: 10px;
-  }
-  // Biografia
-  .mt {
-    width: 90%;
-  }
-
-  .body-info p {
-    font-size: 11px;
-  }
-  // Segunda seccion
-  .multimedia {
-    margin: 30px;
-  }
-
-  // videos
-  .videos {
-    display: flex;
-    flex-wrap: wrap;
+  .container-foto {
     justify-content: center;
   }
 
-  .videos iframe {
-    width: fit-content;
-    height: 200px;
-  }
-
-  footer {
-    position: relative;
-  }
-  // Inicio
-  h3 {
-    position: absolute;
-    left: -70px;
-  }
-  // Redes
-  footer .icons {
-    position: absolute;
-    right: 10px;
-  }
-}
-
-@media all and (max-width: 929px) {
-  h1 {
-    font-size: 1.5rem;
-  }
-}
-
-@media all and (max-width: 814px) {
-  // Portada
-  .container-foto {
-    position: relative;
-  }
-
-  .portada {
-    display: none;
+  .perfil {
+    width: 20rem;
   }
 
   .logo {
-    position: absolute;
-    left: 5px;
+    width: 15rem;
   }
 
-  .perfil {
-    margin-left: 130px;
+  .portada {
+    width: 20rem;
   }
 
-  // Encabezado
+  // Container redes
+  audio {
+    width: 15rem;
+  }
+
   h1 {
-    margin-top: 15px;
-    font-size: 1.2rem;
-  }
-  // Redes
-  .container-redes ul {
-    position: absolute;
-    bottom: -7px;
-    left: 0px;
-    font-size: 13px;
-    display: flex;
+    font-size: 2rem;
   }
 
-  .container-redes ul li {
-    margin: 7px;
+  .container-redes i {
+    font-size: 2rem;
+    padding-top: 0.5rem;
   }
-  // Audio
-  #audio {
-    position: absolute;
-    right: 10px;
-    bottom: 25px;
-  }
+
   // Navmenu
-  .nav-links ul li {
-    padding: 8px;
 
-    a {
-      font-size: 17px;
-    }
+  .nav-links a {
+    font-size: 1.7rem;
+  }
+
+  // Bio
+  .container p {
+    font-size: 1.3em;
+  }
+
+  //Segunda seccion
+  .videos iframe {
+    width: 20rem;
+    height: 10rem;
   }
 }
 
-@media all and (max-width: 480px) {
-  // Portada
-  .container-foto {
-    position: relative;
-  }
-
+@media all and (max-width: 867px) {
   .portada {
     display: none;
   }
 
-  .logo {
-    position: absolute;
-    left: 5px;
+  h1 {
+    font-size: 1.5rem;
+    padding-top: 2rem;
   }
 
-  .perfil {
-    margin-left: 130px;
+  .container-redes i {
+    font-size: 1.5rem;
+    padding-top: 1rem;
   }
+}
+
+@media all and (max-width: 725px) {
   // Encabezado
   h1 {
-    margin-top: 15px;
-    font-size: 1.5rem;
+    padding-top: 0.5rem;
   }
   // Redes
   .container-redes ul {
     position: absolute;
-    bottom: 0px;
-    left: 0px;
-    font-size: 13px;
-    display: flex;
+    bottom: 1.5rem;
+    left: 2rem;
   }
 
-  .container-redes ul li {
-    margin: 7px;
-  }
   // Audio
-  #audio {
+  audio {
     position: absolute;
-    right: 10px;
-    bottom: 35px;
-    width: 250px;
+    right: 1rem;
+    bottom: 3rem;
+    width: 17rem;
   }
+}
+
+@media all and (max-width: 500px) {
+  //Foto Portada
+  .perfil {
+    width: 17rem;
+  }
+
+  .logo {
+    width: 13rem;
+  }
+
   // Navmenu
   .nav-links {
-    padding-top: 8px;
-    margin-left: 10px;
-
-    ul {
-      height: 55px;
-      padding-right: 15px;
-      padding-left: 0px;
-    }
-
-    li {
-      padding: 0px 11px;
-    }
-
+    bottom: -4em;
     a {
-      font-size: 20px;
+      font-size: 1rem;
     }
+  }
+
+  // Biografia
+  .container p {
+    font-size: 1em;
+  }
+
+  // Footer
+  footer a {
+    font-size: 1rem;
+  }
+
+  .icons {
+    padding-top: 0.5rem;
   }
 }
 
 @media all and (max-width: 430px) {
-  #audio {
-    width: 250px;
+  //Foto Portada
+  .perfil {
+    width: 13rem;
   }
 
+  .logo {
+    width: 10rem;
+  }
+
+  // Encabezado
   h1 {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
-  // Redes
-  .container-redes ul li {
-    font-size: 12px;
-    margin-bottom: 0px;
+
+  // Audio
+  audio {
+    width: 14rem;
   }
+
   // Navmenu
-  .nav-links {
-    bottom: -30px;
-  }
-
-  .nav-links ul {
-    padding: 0px 5px;
-    margin-bottom: 7px;
-  }
-
-  .nav-links ul li {
-    margin: auto;
-    padding: 5px;
-  }
-  // Carousel
-  .mf {
-    width: 300px;
-  }
-  // Biografia
-  .mt {
-    width: 90%;
-  }
-  // Segunda seccion
-  .multimedia {
-    margin-left: auto;
-  }
-
-  // Videos
-  .videos {
-    margin: auto;
-    padding-top: 90px;
-  }
-  .videos iframe {
-    width: fit-content;
+  .nav-links a {
+    font-size: 0.8rem;
   }
 }

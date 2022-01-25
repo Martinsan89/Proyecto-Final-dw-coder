@@ -1,5 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap");
+html {
+  font-size: 16px; }
+
+.extend-portada2, .logo, .foto-contacto {
+  border-radius: 2em;
+  margin-top: 0.5em;
+  margin-bottom: 3em; }
+
 * {
   margin: 0;
   padding: 0;
@@ -9,124 +17,140 @@ body {
   background-color: #e9b72f; }
 
 header {
+  height: 19rem;
   position: relative;
-  border-bottom: 2px solid black;
-  height: 350px; }
+  border-bottom: 0.1em solid black;
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5em; }
   header h1 {
     font-family: "Nothing you could do";
     background-color: #353131d5;
     color: #e9b72f;
-    line-height: 277px;
-    display: flex;
-    justify-content: center;
-    clip-path: circle(100px);
-    margin-right: 80px; }
-
-.foto {
-  width: 400px;
-  height: 270px;
-  position: absolute;
-  right: 30px;
-  top: 10px;
-  border-radius: 40px; }
+    line-height: 18rem;
+    clip-path: circle(110px);
+    width: 8em;
+    padding-left: 2em; }
 
 .logo {
-  width: 300px;
-  height: 280px;
-  border-radius: 40px;
-  position: absolute;
-  left: 20px;
-  padding: 20px; }
+  width: 15rem;
+  margin-left: 3em; }
+
+.foto-contacto {
+  width: 30rem;
+  margin-right: 3em; }
 
 .nav-links {
-  margin: 20px;
+  margin: 1em;
   position: relative;
-  bottom: 55px; }
+  bottom: 3.2em; }
   .nav-links ul {
     background-color: #24252a;
     display: inline-block;
-    padding-bottom: 10px;
+    padding-bottom: 1em;
+    padding-left: 0em;
     border: 1px solid white; }
   .nav-links li {
     font-family: "Montserrat", sans-serif;
-    font-weight: 500;
-    margin-top: 10px;
+    margin-top: 1em;
     display: inline-block;
-    padding: 0px 20px; }
+    padding: 0em 1em; }
   .nav-links a {
     text-decoration: none;
-    font-size: 35px;
+    font-size: 2.5em;
     color: #e9b72f;
     transition: all 0.3s ease 0s; }
     .nav-links a:hover {
-      color: #0088a9; }
+      color: #118048; }
 
 main {
-  margin: 20px auto;
-  width: 50%; }
+  margin-top: -2em;
+  margin-left: 0.5rem;
+  width: 90%; }
 
-.style {
+.btn-style {
   background-color: #24252a;
   padding: 0.5rem;
   color: #f5ce94;
   margin: 1rem 0;
   text-transform: uppercase; }
 
-@media all and (max-width: 1110px) {
+/* Footer */
+footer {
+  height: 4rem;
+  background-color: #353131d5;
+  border-top: 3px black solid;
+  display: flex;
+  justify-content: center; }
+  footer h3 {
+    font-family: "Montserrat";
+    padding-top: 0.5rem; }
+    footer h3:hover {
+      transform: scale(1.2, 1.2); }
+  footer a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: #f5ce94;
+    transition: all 0.3s ease 0s;
+    margin-left: 2rem; }
+    footer a:hover {
+      color: #118048; }
+
+.icons {
+  margin-right: 3rem; }
+  .icons i:hover {
+    color: #118048;
+    transform: scale(1.2, 1.2); }
+
+.fa-color {
+  color: #f5ce94; }
+
+@media all and (max-width: 1080px) {
   .logo {
-    width: 250px; }
-  .foto {
-    width: 300px; } }
+    display: none; } }
 
-@media all and (max-width: 810px) {
-  .logo {
-    display: none; }
-  .contacto {
-    position: absolute; }
-  h1 {
-    width: 250px; } }
-
-@media all and (max-width: 660px) {
-  .foto {
-    width: 250px; }
-  .nav-links ul li {
-    padding: 8px; }
-    .nav-links ul li a {
-      font-size: 17px; } }
-
-@media all and (max-width: 520px) {
+@media all and (max-width: 950px) {
   header {
-    position: relative; }
+    justify-content: space-between; }
     header h1 {
-      clip-path: circle(80px);
-      width: 180px; }
-  .foto {
-    margin-top: 15px;
-    position: absolute;
-    right: 20px;
-    height: 250px;
-    width: 200px; }
-  .logo {
-    display: none; }
-  .consultas {
-    margin: auto;
-    width: 100%; }
-  h2 {
-    margin-left: 20px; }
-  .nav-links {
-    padding-top: 8px;
-    margin-left: 10px; }
-    .nav-links ul {
-      height: 55px;
-      padding-right: 15px;
-      padding-left: 0px; }
-    .nav-links li {
-      padding: 0px 11px; } }
+      font-size: 2rem;
+      clip-path: circle(90px); }
+    header .foto-contacto {
+      width: 25em; } }
 
-@media all and (max-width: 445px) {
-  .foto {
-    width: 180px; }
-  .nav-links ul li {
-    padding: 5px; }
-    .nav-links ul li li a {
-      font-size: 15px; } }
+@media all and (max-width: 700px) {
+  header h1 {
+    font-size: 1.7rem; }
+  header .foto-contacto {
+    width: 20em; }
+  .nav-links ul li a {
+    font-size: 1.3rem; } }
+
+@media all and (max-width: 600px) {
+  .foto-contacto {
+    width: 18rem;
+    margin-right: 1em; }
+  .nav-links ul li a {
+    font-size: 1rem; } }
+
+@media all and (max-width: 540px) {
+  header h1 {
+    font-size: 1.2rem;
+    clip-path: circle(70px);
+    padding-left: 1.3em;
+    margin-left: 0.5em; }
+  header .foto-contacto {
+    width: 13rem;
+    height: 13rem;
+    margin-right: 0.5em; }
+  footer a {
+    font-size: 1rem; }
+  .icons {
+    padding-top: 0.5rem; } }
+
+@media all and (max-width: 440px) {
+  header .foto-contacto {
+    width: 10rem;
+    height: 10rem; }
+  .nav-links ul li a {
+    font-size: 0.8rem; } }
